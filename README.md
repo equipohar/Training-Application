@@ -79,6 +79,7 @@ Modifications Made to the Code
 ==============================
 
 Inside the DeviceControlActivity different from the origin code, the services and characteristics were modified to work with our Lilypad Simblee micro controller. The services and characteristics used are:
+
 Service: 0000fe84-0000-1000-8000-00805f9b34fb
 
 Characteristics: 2d30c082-f39f-4ce6-923f-3484ea480596
