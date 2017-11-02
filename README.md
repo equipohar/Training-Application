@@ -82,7 +82,8 @@ Inside the DeviceControlActivity different from the origin code, the services an
 Service: 0000fe84-0000-1000-8000-00805f9b34fb
 
 Characteristics: 2d30c082-f39f-4ce6-923f-3484ea480596
-•	These can be changed inside the Sample Gatt Attribute .Java 
+
+These can be changed inside the Sample Gatt Attribute .Java 
 Other changes inside the DeviceControlActivity are the addiction of some textViews to visualize the accelerometer data and a record toggle button to record the raw data to later graph and sent to a data base via url http requests.
 The library used to graph that is include in the repository is [MPAndroidChart][3]. 
 
