@@ -1,0 +1,134 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:16:1-68:12
+	package
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:17:5-50
+	android:versionName
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:19:5-30
+		INJECTED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:18:5-28
+		INJECTED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:16:11-69
+uses-feature#android.hardware.bluetooth_le
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:30:5-32:35
+	android:required
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:32:9-32
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:31:9-53
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:34:5-68
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:34:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:35:5-74
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:35:22-71
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:36:5-79
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:36:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:37:5-81
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:37:22-78
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:38:5-67
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:38:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:39:5-81
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:39:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:40:5-75
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:40:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:41:5-80
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:41:22-77
+uses-permission#android.permission.WRITE_INTERNAL_STORAGE
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:42:5-81
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:42:22-78
+application
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:44:5-66:19
+MERGED from [com.android.volley:volley:unspecified] C:\Users\vitto\Desktop\BluetoothLeGatt\volley\build\intermediates\bundles\default\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-v13:25.0.1] C:\Users\vitto\.android\build-cache\41ea642db00fea9bf5721f1cf58ca92b2a76776e\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\vitto\.android\build-cache\abdebf68a4fdf3af3735995ffa71921ffd2750c3\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:25.0.1] C:\Users\vitto\.android\build-cache\fab9920837c0db894002060cd550f19d02c4f46d\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.1] C:\Users\vitto\.android\build-cache\ead5bc89519ba05ed21a6cd7b589e42c11128506\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.1] C:\Users\vitto\.android\build-cache\e892365618bb3882290c828caaf72cf8f106ea13\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.1] C:\Users\vitto\.android\build-cache\703cba8385e179304a154f8e1c124a35e81e490e\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.1] C:\Users\vitto\.android\build-cache\0b5ff3f928891d9ae2c6389ccf53e6cecf904733\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.1] C:\Users\vitto\.android\build-cache\c2a846f4b729a9616998e1008bab6e5570940c36\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] C:\Users\vitto\.android\build-cache\82dfe9e443bbbce0c89c4fba4acec12e162b7ef3\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.1] C:\Users\vitto\.android\build-cache\a5e86f22382ab073f15886cad3e601c06dea207d\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:25.0.1] C:\Users\vitto\.android\build-cache\afb94c522db707c10417065aac2ea1a886bd0ec5\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\vitto\.android\build-cache\676bb3c9e92f8177579f0d9a67d85bec39acdd54\output\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:46:9-41
+	android:icon
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:45:9-43
+	android:theme
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:47:9-40
+activity#com.example.android.bluetoothlegatt.DeviceScanActivity
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:48:9-56:20
+	android:label
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:50:13-45
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:49:13-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:51:13-55:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:52:17-69
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:52:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:54:17-77
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:54:27-74
+activity#com.example.android.bluetoothlegatt.DeviceControlActivity
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:57:9-59
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:57:19-56
+activity#com.example.android.bluetoothlegatt.Graphs
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:58:9-60:54
+	android:theme
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:60:13-51
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:59:13-35
+service#com.example.android.bluetoothlegatt.BluetoothLeService
+ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:62:9-64:38
+	android:enabled
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:64:13-35
+	android:name
+		ADDED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:63:13-47
+uses-sdk
+INJECTED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.volley:volley:unspecified] C:\Users\vitto\Desktop\BluetoothLeGatt\volley\build\intermediates\bundles\default\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:support-v13:25.0.1] C:\Users\vitto\.android\build-cache\41ea642db00fea9bf5721f1cf58ca92b2a76776e\output\AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\vitto\.android\build-cache\abdebf68a4fdf3af3735995ffa71921ffd2750c3\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.0.1] C:\Users\vitto\.android\build-cache\fab9920837c0db894002060cd550f19d02c4f46d\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.0.1] C:\Users\vitto\.android\build-cache\ead5bc89519ba05ed21a6cd7b589e42c11128506\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.0.1] C:\Users\vitto\.android\build-cache\e892365618bb3882290c828caaf72cf8f106ea13\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.0.1] C:\Users\vitto\.android\build-cache\703cba8385e179304a154f8e1c124a35e81e490e\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.0.1] C:\Users\vitto\.android\build-cache\0b5ff3f928891d9ae2c6389ccf53e6cecf904733\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.0.1] C:\Users\vitto\.android\build-cache\c2a846f4b729a9616998e1008bab6e5570940c36\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] C:\Users\vitto\.android\build-cache\82dfe9e443bbbce0c89c4fba4acec12e162b7ef3\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.0.1] C:\Users\vitto\.android\build-cache\a5e86f22382ab073f15886cad3e601c06dea207d\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:25.0.1] C:\Users\vitto\.android\build-cache\afb94c522db707c10417065aac2ea1a886bd0ec5\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\vitto\.android\build-cache\676bb3c9e92f8177579f0d9a67d85bec39acdd54\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.edmodo:rangebar:1.0.0] C:\Users\vitto\.android\build-cache\00b52f84afdb204cc4311e0146a268bd870fa021\output\AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v13:25.0.1] C:\Users\vitto\.android\build-cache\41ea642db00fea9bf5721f1cf58ca92b2a76776e\output\AndroidManifest.xml:23:9-52
+	android:targetSdkVersion
+		INJECTED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\vitto\Desktop\BluetoothLeGatt\Application\src\main\AndroidManifest.xml

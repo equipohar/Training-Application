@@ -1,0 +1,4 @@
+#Tue Oct 03 13:54:03 COT 2017
+base.0=C\:\\Users\\vitto\\Desktop\\BluetoothLeGatt\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8
+renamed.0=classes.dex
+file.0=C\:\\Users\\vitto\\Desktop\\BluetoothLeGatt\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8\\classes.dex

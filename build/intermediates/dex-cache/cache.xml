@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\vitto\Desktop\BluetoothLeGatt\volley\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="863e41d99c0a400ba9cd8331b33d1b31e76520ef">
+        <dex dex="C:\Users\vitto\Desktop\BluetoothLeGatt\Application\build\intermediates\pre-dexed\debug\classes_75ddaf46bd2a25713eaf739e138e332ce025b2cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vitto\.android\build-cache\00b52f84afdb204cc4311e0146a268bd870fa021\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b935227af51c2df70e2be2cbfc5872ff2d726ed5">
+        <dex dex="C:\Users\vitto\Desktop\BluetoothLeGatt\Application\build\intermediates\pre-dexed\debug\classes_ba37aadcf06894527abff3481e2cecb7cea253ae.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vitto\Desktop\BluetoothLeGatt\Application\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="C:\Users\vitto\Desktop\BluetoothLeGatt\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1a1439e5f8a581de0fedef7dcd52fb588e631584\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vitto\Desktop\BluetoothLeGatt\Application\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d613f5bcaa66009dff49259b3b65f5ce6a38fc04">
+        <dex dex="C:\Users\vitto\Desktop\BluetoothLeGatt\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_9873b712b3cc277d99c855eefe7b891d5cdb8fbc\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vitto\Desktop\BluetoothLeGatt\opencsv-4.0\opencsv-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2b63c820c41cd1666df42f1ba296da9894961e59">
+        <dex dex="C:\Users\vitto\Desktop\BluetoothLeGatt\Application\build\intermediates\pre-dexed\debug\opencsv-4.0_88cae709353224c2b88c283daa09d3ea7e0f7785.jar" />
+    </item>
+
+</items>
