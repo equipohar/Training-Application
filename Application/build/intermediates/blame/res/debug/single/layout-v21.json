@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\Vitto Russo\\Desktop\\Android Projects\\TestingApp\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Vitto Russo\\.android\\build-cache\\393878751ff06f2f7b11e471e26b3f3e4dd96afe\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vitto Russo\\Desktop\\Android Projects\\TestingApp\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Vitto Russo\\.android\\build-cache\\393878751ff06f2f7b11e471e26b3f3e4dd96afe\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
         "merged": "C:\\Users\\vitto\\Desktop\\BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
         "source": "C:\\Users\\vitto\\.android\\build-cache\\fab9920837c0db894002060cd550f19d02c4f46d\\output\\res\\layout-v21\\notification_template_icon_group.xml"
     },
@@ -14,5 +22,13 @@
     {
         "merged": "C:\\Users\\vitto\\Desktop\\BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
         "source": "C:\\Users\\vitto\\.android\\build-cache\\fab9920837c0db894002060cd550f19d02c4f46d\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vitto Russo\\Desktop\\Android Projects\\TestingApp\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Vitto Russo\\.android\\build-cache\\393878751ff06f2f7b11e471e26b3f3e4dd96afe\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vitto Russo\\Desktop\\Android Projects\\TestingApp\\Application\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Vitto Russo\\.android\\build-cache\\393878751ff06f2f7b11e471e26b3f3e4dd96afe\\output\\res\\layout-v21\\notification_template_custom_big.xml"
     }
 ]

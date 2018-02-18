@@ -2,5 +2,9 @@
     {
         "merged": "C:\\Users\\vitto\\Desktop\\BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
         "source": "C:\\Users\\vitto\\Desktop\\BluetoothLeGatt\\Application\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Vitto Russo\\Desktop\\Android Projects\\TestingApp\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Vitto Russo\\Desktop\\Android Projects\\TestingApp\\Application\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
     }
 ]

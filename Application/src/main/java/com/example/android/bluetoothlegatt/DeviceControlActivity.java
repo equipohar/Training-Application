@@ -155,9 +155,9 @@ public class DeviceControlActivity extends Activity {
                             String sensor1 = tokens.nextToken();
                             String sensor2 = tokens.nextToken();
 
-                            numsensor0 = (Float.valueOf(sensor0)-518)/100;  // Pin X
-                            numsensor1 = (Float.valueOf(sensor1)-525)/100;  // Pin Y
-                            numsensor2 = (Float.valueOf(sensor2)-532)/100;  // Pin Z
+                            numsensor0 = standerdize(Float.parseFloat(sensor0),419,609);  // Pin X
+                            numsensor1 = standerdize(Float.parseFloat(sensor1),380,554);  // Pin Y
+                            numsensor2 = standerdize(Float.parseFloat(sensor2),424,618);  // Pin Z
 
                             System.out.println("El valor de X" + sensor0);
                             System.out.println("El valor de Y" + sensor1);
@@ -427,5 +427,11 @@ public class DeviceControlActivity extends Activity {
         intentFilter.addAction(BluetoothLeService.ACTION_GATT_SERVICES_DISCOVERED);
         intentFilter.addAction(BluetoothLeService.ACTION_DATA_AVAILABLE);
         return intentFilter;
+    }
+
+    public float standerdize(float x, float in_min, float in_max){
+        float out_min = -1;
+        float out_max = 1;
+        return ((x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min);
     }
 }
