@@ -8,41 +8,41 @@ package com.edmodo.rangebar;
 
 public final class R {
     public static final class attr {
-        public static final int barColor = 0x7f0100ed;
-        public static final int barWeight = 0x7f0100ec;
-        public static final int connectingLineColor = 0x7f0100ef;
-        public static final int connectingLineWeight = 0x7f0100ee;
-        public static final int thumbColorNormal = 0x7f0100f3;
-        public static final int thumbColorPressed = 0x7f0100f4;
-        public static final int thumbImageNormal = 0x7f0100f1;
-        public static final int thumbImagePressed = 0x7f0100f2;
-        public static final int thumbRadius = 0x7f0100f0;
-        public static final int tickCount = 0x7f0100ea;
-        public static final int tickHeight = 0x7f0100eb;
+        public static final int barColor = 0x7f020030;
+        public static final int barWeight = 0x7f020032;
+        public static final int connectingLineColor = 0x7f020056;
+        public static final int connectingLineWeight = 0x7f020057;
+        public static final int thumbColorNormal = 0x7f0200fc;
+        public static final int thumbColorPressed = 0x7f0200fd;
+        public static final int thumbImageNormal = 0x7f0200fe;
+        public static final int thumbImagePressed = 0x7f0200ff;
+        public static final int thumbRadius = 0x7f020100;
+        public static final int tickCount = 0x7f020104;
+        public static final int tickHeight = 0x7f020105;
     }
     public static final class drawable {
-        public static final int seek_thumb_normal = 0x7f02005e;
-        public static final int seek_thumb_pressed = 0x7f02005f;
+        public static final int seek_thumb_normal = 0x7f060060;
+        public static final int seek_thumb_pressed = 0x7f060061;
     }
     public static final class string {
-        public static final int app_name = 0x7f060021;
+        public static final int app_name = 0x7f0c001f;
     }
     public static final class style {
-        public static final int AppBaseTheme = 0x7f08000c;
-        public static final int AppTheme = 0x7f0800a0;
+        public static final int AppBaseTheme = 0x7f0d0004;
+        public static final int AppTheme = 0x7f0d0005;
     }
     public static final class styleable {
-        public static final int[] RangeBar = { 0x7f0100ea, 0x7f0100eb, 0x7f0100ec, 0x7f0100ed, 0x7f0100ee, 0x7f0100ef, 0x7f0100f0, 0x7f0100f1, 0x7f0100f2, 0x7f0100f3, 0x7f0100f4 };
-        public static final int RangeBar_barColor = 3;
-        public static final int RangeBar_barWeight = 2;
-        public static final int RangeBar_connectingLineColor = 5;
-        public static final int RangeBar_connectingLineWeight = 4;
-        public static final int RangeBar_thumbColorNormal = 9;
-        public static final int RangeBar_thumbColorPressed = 10;
-        public static final int RangeBar_thumbImageNormal = 7;
-        public static final int RangeBar_thumbImagePressed = 8;
-        public static final int RangeBar_thumbRadius = 6;
-        public static final int RangeBar_tickCount = 0;
-        public static final int RangeBar_tickHeight = 1;
+        public static final int[] RangeBar = { 0x7f020030, 0x7f020032, 0x7f020056, 0x7f020057, 0x7f0200fc, 0x7f0200fd, 0x7f0200fe, 0x7f0200ff, 0x7f020100, 0x7f020104, 0x7f020105 };
+        public static final int RangeBar_barColor = 0;
+        public static final int RangeBar_barWeight = 1;
+        public static final int RangeBar_connectingLineColor = 2;
+        public static final int RangeBar_connectingLineWeight = 3;
+        public static final int RangeBar_thumbColorNormal = 4;
+        public static final int RangeBar_thumbColorPressed = 5;
+        public static final int RangeBar_thumbImageNormal = 6;
+        public static final int RangeBar_thumbImagePressed = 7;
+        public static final int RangeBar_thumbRadius = 8;
+        public static final int RangeBar_tickCount = 9;
+        public static final int RangeBar_tickHeight = 10;
     }
 }

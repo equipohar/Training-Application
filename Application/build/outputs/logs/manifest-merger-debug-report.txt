@@ -1,18 +1,36 @@
 -- Merging decision tree log ---
 manifest
 ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-68:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-68:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-68:12
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\8d4e3deaec4d64f21eacd8943e601269\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v13:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v13-25.0.1.aar\09ae8e9784cae40e9eb446db7ceb3d33\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:appcompat-v7:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.0.1.aar\6e1f5e24772c3a4573d4aa4cf6943a8c\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-v4:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v4-25.0.1.aar\bee66002a7fafb1ce3545400cbc93728\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.0.1.aar\df4705844040bd30c8fcf2b193a26f46\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\74017dc36b32dee4a06a5f680907f9a9\AndroidManifest.xml:2:1-11:12
+MERGED from [com.edmodo:rangebar:1.0.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\rangebar-1.0.0.aar\1ea51eab81de57345bd22e42fbc16053\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-fragment-25.0.1.aar\6e1a28d1161b3f9bdc4ee2785d7dabfb\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.0.1.aar\cf0269da2d4ab7542f6473c4a59b84f6\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.0.1.aar\c18af7ce9d4989b342c4d07e8d66a244\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.0.1.aar\27e2c714378421fe3aa2a1237894b79b\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.1.aar\0c90285eb80ede59741200c369e8b5a5\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.0.1.aar\bc6c222f788555ed095398619e336cbc\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:support-compat:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-compat-25.0.1.aar\ad94b42b0aed4964ced28d98adea49dc\AndroidManifest.xml:17:1-27:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-68:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-68:12
 	package
 		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:17:5-50
 	android:versionName
 		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:19:5-30
 		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:11-69
 	android:versionCode
 		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:18:5-28
 		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:11-69
 uses-feature#android.hardware.bluetooth_le
 ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:30:5-32:35
 	android:required
@@ -57,19 +75,32 @@ ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\
 		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:42:22-78
 application
 ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:44:5-66:19
-MERGED from [com.android.volley:volley:unspecified] C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\volley\build\intermediates\bundles\default\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-v13:25.0.1] C:\Users\Vitto Russo\.android\build-cache\8c8cc327eead07d6e2d40957c5f40a1d19756b94\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\Vitto Russo\.android\build-cache\3b0a81bc4180b9e024d996df6b94f4b63e266710\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:25.0.1] C:\Users\Vitto Russo\.android\build-cache\393878751ff06f2f7b11e471e26b3f3e4dd96afe\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.0.1] C:\Users\Vitto Russo\.android\build-cache\b7e744b1dfb556fabb5e8b3128db8fbc1d84f943\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.0.1] C:\Users\Vitto Russo\.android\build-cache\f85c980286128d4f0797064e5c481246b9c8caba\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.0.1] C:\Users\Vitto Russo\.android\build-cache\f6c9b28482e8127a9256aa399a95b5d0b7d7dc02\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.0.1] C:\Users\Vitto Russo\.android\build-cache\0a238831b2ea63bc48f41cff619e8d95703b5cff\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.0.1] C:\Users\Vitto Russo\.android\build-cache\867f0fed1c9f89018099a78477a46fb3e3f401a9\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.0.1] C:\Users\Vitto Russo\.android\build-cache\5a06ec6be39341aa1f9c8a3988f3107182e1d9b1\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.0.1] C:\Users\Vitto Russo\.android\build-cache\ec7f0b63d901929773f9f73b71adc0192ca5a758\output\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-compat:25.0.1] C:\Users\Vitto Russo\.android\build-cache\0923d14d30c09f187e09945d7b6e364084fb10a8\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Vitto Russo\.android\build-cache\3942fe48ad47045d32d44e4a0334c834658b0e97\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\8d4e3deaec4d64f21eacd8943e601269\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\8d4e3deaec4d64f21eacd8943e601269\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-v13:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v13-25.0.1.aar\09ae8e9784cae40e9eb446db7ceb3d33\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v13:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v13-25.0.1.aar\09ae8e9784cae40e9eb446db7ceb3d33\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.0.1.aar\6e1f5e24772c3a4573d4aa4cf6943a8c\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.0.1.aar\6e1f5e24772c3a4573d4aa4cf6943a8c\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v4-25.0.1.aar\bee66002a7fafb1ce3545400cbc93728\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v4-25.0.1.aar\bee66002a7fafb1ce3545400cbc93728\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.0.1.aar\df4705844040bd30c8fcf2b193a26f46\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.0.1.aar\df4705844040bd30c8fcf2b193a26f46\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\74017dc36b32dee4a06a5f680907f9a9\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\74017dc36b32dee4a06a5f680907f9a9\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-fragment:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-fragment-25.0.1.aar\6e1a28d1161b3f9bdc4ee2785d7dabfb\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-fragment-25.0.1.aar\6e1a28d1161b3f9bdc4ee2785d7dabfb\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.0.1.aar\cf0269da2d4ab7542f6473c4a59b84f6\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.0.1.aar\cf0269da2d4ab7542f6473c4a59b84f6\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.0.1.aar\c18af7ce9d4989b342c4d07e8d66a244\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.0.1.aar\c18af7ce9d4989b342c4d07e8d66a244\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.0.1.aar\27e2c714378421fe3aa2a1237894b79b\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.0.1.aar\27e2c714378421fe3aa2a1237894b79b\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.1.aar\0c90285eb80ede59741200c369e8b5a5\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.1.aar\0c90285eb80ede59741200c369e8b5a5\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.0.1.aar\bc6c222f788555ed095398619e336cbc\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.0.1.aar\bc6c222f788555ed095398619e336cbc\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-compat-25.0.1.aar\ad94b42b0aed4964ced28d98adea49dc\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-compat-25.0.1.aar\ad94b42b0aed4964ced28d98adea49dc\AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:46:9-41
 	android:icon
@@ -110,25 +141,45 @@ ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\
 		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:63:13-47
 uses-sdk
 INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.volley:volley:unspecified] C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\volley\build\intermediates\bundles\default\AndroidManifest.xml:7:5-43
-MERGED from [com.android.support:support-v13:25.0.1] C:\Users\Vitto Russo\.android\build-cache\8c8cc327eead07d6e2d40957c5f40a1d19756b94\output\AndroidManifest.xml:21:5-23:55
-MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\Vitto Russo\.android\build-cache\3b0a81bc4180b9e024d996df6b94f4b63e266710\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:25.0.1] C:\Users\Vitto Russo\.android\build-cache\393878751ff06f2f7b11e471e26b3f3e4dd96afe\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:25.0.1] C:\Users\Vitto Russo\.android\build-cache\b7e744b1dfb556fabb5e8b3128db8fbc1d84f943\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.0.1] C:\Users\Vitto Russo\.android\build-cache\f85c980286128d4f0797064e5c481246b9c8caba\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.0.1] C:\Users\Vitto Russo\.android\build-cache\f6c9b28482e8127a9256aa399a95b5d0b7d7dc02\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.0.1] C:\Users\Vitto Russo\.android\build-cache\0a238831b2ea63bc48f41cff619e8d95703b5cff\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.0.1] C:\Users\Vitto Russo\.android\build-cache\867f0fed1c9f89018099a78477a46fb3e3f401a9\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:25.0.1] C:\Users\Vitto Russo\.android\build-cache\5a06ec6be39341aa1f9c8a3988f3107182e1d9b1\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.0.1] C:\Users\Vitto Russo\.android\build-cache\ec7f0b63d901929773f9f73b71adc0192ca5a758\output\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-compat:25.0.1] C:\Users\Vitto Russo\.android\build-cache\0923d14d30c09f187e09945d7b6e364084fb10a8\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Vitto Russo\.android\build-cache\3942fe48ad47045d32d44e4a0334c834658b0e97\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.edmodo:rangebar:1.0.0] C:\Users\Vitto Russo\.android\build-cache\551a1a4945f423227d8d915c23af4a17838ee998\output\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\8d4e3deaec4d64f21eacd8943e601269\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\8d4e3deaec4d64f21eacd8943e601269\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:support-v13:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v13-25.0.1.aar\09ae8e9784cae40e9eb446db7ceb3d33\AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:support-v13:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v13-25.0.1.aar\09ae8e9784cae40e9eb446db7ceb3d33\AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:appcompat-v7:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.0.1.aar\6e1f5e24772c3a4573d4aa4cf6943a8c\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.0.1.aar\6e1f5e24772c3a4573d4aa4cf6943a8c\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v4-25.0.1.aar\bee66002a7fafb1ce3545400cbc93728\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v4-25.0.1.aar\bee66002a7fafb1ce3545400cbc93728\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.0.1.aar\df4705844040bd30c8fcf2b193a26f46\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.0.1.aar\df4705844040bd30c8fcf2b193a26f46\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\74017dc36b32dee4a06a5f680907f9a9\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\74017dc36b32dee4a06a5f680907f9a9\AndroidManifest.xml:5:5-7:41
+MERGED from [com.edmodo:rangebar:1.0.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\rangebar-1.0.0.aar\1ea51eab81de57345bd22e42fbc16053\AndroidManifest.xml:7:5-9:41
+MERGED from [com.edmodo:rangebar:1.0.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\rangebar-1.0.0.aar\1ea51eab81de57345bd22e42fbc16053\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-fragment-25.0.1.aar\6e1a28d1161b3f9bdc4ee2785d7dabfb\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-fragment-25.0.1.aar\6e1a28d1161b3f9bdc4ee2785d7dabfb\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.0.1.aar\cf0269da2d4ab7542f6473c4a59b84f6\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.0.1.aar\cf0269da2d4ab7542f6473c4a59b84f6\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.0.1.aar\c18af7ce9d4989b342c4d07e8d66a244\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.0.1.aar\c18af7ce9d4989b342c4d07e8d66a244\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.0.1.aar\27e2c714378421fe3aa2a1237894b79b\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.0.1.aar\27e2c714378421fe3aa2a1237894b79b\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.1.aar\0c90285eb80ede59741200c369e8b5a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.1.aar\0c90285eb80ede59741200c369e8b5a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.0.1.aar\bc6c222f788555ed095398619e336cbc\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.0.1.aar\bc6c222f788555ed095398619e336cbc\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-compat-25.0.1.aar\ad94b42b0aed4964ced28d98adea49dc\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-compat-25.0.1.aar\ad94b42b0aed4964ced28d98adea49dc\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v13:25.0.1] C:\Users\Vitto Russo\.android\build-cache\8c8cc327eead07d6e2d40957c5f40a1d19756b94\output\AndroidManifest.xml:23:9-52
+		ADDED from [com.android.support:support-v13:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v13-25.0.1.aar\09ae8e9784cae40e9eb446db7ceb3d33\AndroidManifest.xml:23:9-52
 	android:targetSdkVersion
 		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml
