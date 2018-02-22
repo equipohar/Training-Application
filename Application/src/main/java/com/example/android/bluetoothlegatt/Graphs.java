@@ -239,7 +239,6 @@ public class Graphs extends AppCompatActivity{
                         }
                     });
                     //stringRequest.setRetryPolicy(new DefaultRetryPolicy(DefaultRetryPolicy.DEFAULT_TIMEOUT_MS * 2, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-                    // Add the request to the RequestQueue.
                     queue.add(stringRequest);
                 }
 
