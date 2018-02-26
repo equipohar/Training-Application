@@ -6,6 +6,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -60,6 +61,8 @@ public class Graphs extends AppCompatActivity{
     EditText editID,editSesion;
     float porLeft, porRight,indexLeft,indexRight;
     int porIntLeft, porIntRight;
+    private int numCSV;
+
 
 
 
@@ -90,12 +93,36 @@ public class Graphs extends AppCompatActivity{
         textLeft.setText(String.valueOf(leftThumbIndex*5+"%"));
         textRight.setText(String.valueOf(rightThumbIndex*5+"%"));
 
+        final SharedPreferences sharedPref = Graphs.this.getPreferences(Context.MODE_PRIVATE);
+        int defaultValue = getResources().getInteger(R.integer.saved_high_score_default_key);
+        numCSV = sharedPref.getInt(getString(R.string.saved_high_score_key), defaultValue);
+
+        editSesion.setText(String.valueOf(numCSV));
+
         final AlertDialog.Builder alt_bld = new AlertDialog.Builder(Graphs.this);
         alt_bld.setMessage("Please enter a valid label or a valid selection range.");
         alt_bld.setCancelable(true);
         alt_bld.setPositiveButton("Ok",new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
 
+            }
+        });
+
+        final AlertDialog.Builder alt_Confirm = new AlertDialog.Builder(Graphs.this);
+        alt_Confirm.setTitle("CSV File saved successfully.");
+        alt_Confirm.setMessage("Do you wish to record new data again?");
+        alt_Confirm.setCancelable(true);
+        alt_Confirm.setPositiveButton("Yes",new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Intent retBack = new Intent(Graphs.this,DeviceScanActivity.class);
+                startActivity(retBack);
+                finish();
+            }
+        });
+        alt_Confirm.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                editSesion.setText(String.valueOf(numCSV));
             }
         });
 
@@ -146,6 +173,12 @@ public class Graphs extends AppCompatActivity{
                     sendDB(ValoresX,ValoresY,ValoresZ);
                     try {
                         CreateCSV(ValoresX,ValoresY,ValoresZ);
+                        numCSV = Integer.valueOf(editSesion.getText().toString());
+                        numCSV++;
+                        SharedPreferences.Editor editor = sharedPref.edit();
+                        editor.putInt(getString(R.string.saved_high_score_key), numCSV);
+                        editor.apply();
+                        alt_Confirm.show();
                     }
                     catch (IOException e){
                         System.out.println("No se porque pero no funciono esta vaina");
@@ -262,7 +295,7 @@ public class Graphs extends AppCompatActivity{
             }
         }
         File mypath=new File(mediaStorageDir,(editSesion.getText().toString()+".csv"));
-        CSVWriter writer = new CSVWriter(new FileWriter(mypath,true));
+        CSVWriter writer = new CSVWriter(new FileWriter(mypath,false));
         System.out.println(mypath);
         List<String[]> data = new ArrayList<String[]>();
 

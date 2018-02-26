@@ -32,4 +32,5 @@
     <string name="menu_disconnect">Disconnect</string>
     <string name="menu_scan">Scan</string>
     <string name="menu_stop">Stop</string>
+    <string name="saved_high_score_key">numCSV</string>
 </resources>

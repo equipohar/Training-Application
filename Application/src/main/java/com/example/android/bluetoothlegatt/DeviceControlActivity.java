@@ -150,6 +150,7 @@ public class DeviceControlActivity extends Activity {
                 ValoresX.clear();
                 ValoresY.clear();
                 ValoresZ.clear();
+                finish();
             }
         });
 
