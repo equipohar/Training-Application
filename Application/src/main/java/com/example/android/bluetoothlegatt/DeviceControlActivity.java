@@ -18,8 +18,10 @@ package com.example.android.bluetoothlegatt;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattService;
+import android.bluetooth.BluetoothManager;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
@@ -27,6 +29,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
@@ -41,6 +45,7 @@ import android.widget.ExpandableListView;
 import android.widget.ProgressBar;
 import android.widget.SimpleExpandableListAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.android.volley.Request;
@@ -55,12 +60,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.StringTokenizer;
 
-/**
- * For a given BLE device, this Activity provides the user interface to connect, display data,
- * and display GATT services and characteristics supported by the device.  The Activity
- * communicates with {@code BluetoothLeService}, which in turn interacts with the
- * Bluetooth LE API.
- */
 public class DeviceControlActivity extends Activity {
     private final static String TAG = DeviceControlActivity.class.getSimpleName();
 
@@ -73,6 +72,7 @@ public class DeviceControlActivity extends Activity {
     private TextView mDataField;
     private String mDeviceName;
     private String mDeviceAddress;
+    private BluetoothAdapter mBluetoothAdapter;
     private ExpandableListView mGattServicesList;
     private BluetoothLeService mBluetoothLeService;
     private ArrayList<ArrayList<BluetoothGattCharacteristic>> mGattCharacteristics =
@@ -87,6 +87,8 @@ public class DeviceControlActivity extends Activity {
     private String digits;
     private int orden = 1;
 
+    private static final int REQUEST_ENABLE_BT = 1;
+
     private ArrayList<Float> ValoresX = new ArrayList<>();
     private ArrayList<Float> ValoresY = new ArrayList<>();
     private ArrayList<Float> ValoresZ = new ArrayList<>();
@@ -97,14 +99,20 @@ public class DeviceControlActivity extends Activity {
 
     ToggleButton toggle;
     private int status;
-    private long startTime=0L,timeInMilliseconds=0L,timeSwapBuff=0L,updateTime=0L;
+    private long startTime = 0L, timeInMilliseconds = 0L, timeSwapBuff = 0L, updateTime = 0L;
     private int startSecs = 0;
 
     private Handler customHandler = new Handler();
 
-
-
     private StringBuilder recDataString = new StringBuilder();
+
+    private SharedPreferences sharedPref;
+    private Float minX = 0f;
+    private Float maxX = 0f;
+    private Float minY = 0f;
+    private Float maxY = 0f;
+    private Float minZ = 0f;
+    private Float maxZ = 0f;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -112,9 +120,8 @@ public class DeviceControlActivity extends Activity {
         setContentView(R.layout.gatt_services_characteristics);
 
         final Intent intent = getIntent();
-        mDeviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
-        mDeviceAddress = intent.getStringExtra(EXTRAS_DEVICE_ADDRESS);
-
+        mDeviceName = "LilyPad HAR";
+        mDeviceAddress = "F8:76:6C:D1:B2:1C";
 
         // Sets up UI references.
         ((TextView) findViewById(R.id.device_address)).setText(mDeviceAddress);
@@ -124,15 +131,15 @@ public class DeviceControlActivity extends Activity {
         sensorView0 = (TextView) findViewById(R.id.textX);
         sensorView1 = (TextView) findViewById(R.id.textY);
         sensorView2 = (TextView) findViewById(R.id.textZ);
-        timeProgress = (ProgressBar)findViewById(R.id.determinateBar);
-        txtTimer = (TextView)findViewById(R.id.timerValue);
+        timeProgress = (ProgressBar) findViewById(R.id.determinateBar);
+        txtTimer = (TextView) findViewById(R.id.timerValue);
 
 
         status = 0;
         final AlertDialog.Builder alt_bld = new AlertDialog.Builder(DeviceControlActivity.this);
         alt_bld.setMessage("Do you wish to graph the accelerometer meseaurements?");
         alt_bld.setCancelable(false);
-        alt_bld.setNegativeButton("No",new DialogInterface.OnClickListener() {
+        alt_bld.setNegativeButton("No", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 ValoresX.clear();
                 ValoresY.clear();
@@ -142,9 +149,9 @@ public class DeviceControlActivity extends Activity {
         alt_bld.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 Intent intent = new Intent(DeviceControlActivity.this, Graphs.class);
-                intent.putExtra("Valores_de_X",ValoresX);
-                intent.putExtra("Valores_de_Y",ValoresY);
-                intent.putExtra("Valores_de_Z",ValoresZ);
+                intent.putExtra("Valores_de_X", ValoresX);
+                intent.putExtra("Valores_de_Y", ValoresY);
+                intent.putExtra("Valores_de_Z", ValoresZ);
                 startActivity(intent);
                 mBluetoothLeService.disconnect();
                 ValoresX.clear();
@@ -156,7 +163,6 @@ public class DeviceControlActivity extends Activity {
 
 
         getActionBar().setTitle(mDeviceName);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 
@@ -166,17 +172,17 @@ public class DeviceControlActivity extends Activity {
                 if (isChecked) {
                     // The toggle is enabled
                     status = 1;
-                    startTime=0L;
-                    timeInMilliseconds=0L;
-                    timeSwapBuff=0L;
-                    updateTime=0L;
+                    startTime = 0L;
+                    timeInMilliseconds = 0L;
+                    timeSwapBuff = 0L;
+                    updateTime = 0L;
                     timeProgress.setProgress(0);
                     startTime = SystemClock.uptimeMillis();
-                    customHandler.postDelayed(updateTimerThread,0);
+                    customHandler.postDelayed(updateTimerThread, 0);
 
                 } else {
                     // The toggle is disabled
-                    timeSwapBuff+=timeInMilliseconds;
+                    timeSwapBuff += timeInMilliseconds;
                     customHandler.removeCallbacks(updateTimerThread);
                     status = 0;
                     alt_bld.show();
@@ -184,6 +190,35 @@ public class DeviceControlActivity extends Activity {
                 }
             }
         });
+
+        sharedPref = this.getPreferences(Context.MODE_PRIVATE);
+
+        if (sharedPref.getFloat("minX", -999) == -999) {
+            Intent calibrate = new Intent(this, CalibrationActivity.class);
+            startActivityForResult(calibrate,2);
+        } else {
+            minX = sharedPref.getFloat("minX", -999);
+            maxX = sharedPref.getFloat("maxX", -999);
+            minY = sharedPref.getFloat("minY", -999);
+            maxY = sharedPref.getFloat("maxY", -999);
+            minZ = sharedPref.getFloat("minZ", -999);
+            maxZ = sharedPref.getFloat("maxZ", -999);
+        }
+        if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
+            Toast.makeText(this, R.string.ble_not_supported, Toast.LENGTH_SHORT).show();
+            finish();
+        }
+
+        final BluetoothManager bluetoothManager =
+                (BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
+        mBluetoothAdapter = bluetoothManager.getAdapter();
+
+        if (!mBluetoothAdapter.isEnabled()) {
+            if (!mBluetoothAdapter.isEnabled()) {
+                Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+            }
+        }
     }
 
     // Code to manage Service lifecycle.
@@ -241,28 +276,24 @@ public class DeviceControlActivity extends Activity {
                     if (recDataString.charAt(0) == '#')                             //if it starts with # we know it is what we are looking for
                     {
                         StringTokenizer tokens = new StringTokenizer(dataInPrint, "+");
-                        String sensor0 = tokens.nextToken().replace("#","");
+                        String sensor0 = tokens.nextToken().replace("#", "");
                         String sensor1 = tokens.nextToken();
                         String sensor2 = tokens.nextToken();
 
-                        numsensor0 = standerdize(Float.parseFloat(sensor0),419,609);  // Pin X
-                        numsensor1 = standerdize(Float.parseFloat(sensor1),380,554);  // Pin Y
-                        numsensor2 = standerdize(Float.parseFloat(sensor2),424,618);  // Pin Z
+                        numsensor0 = standerdize(Float.parseFloat(sensor0), minX, maxX);  // Pin X
+                        numsensor1 = standerdize(Float.parseFloat(sensor1), minY, maxY);  // Pin Y
+                        numsensor2 = standerdize(Float.parseFloat(sensor2), minZ, maxZ);  // Pin Z
 
-                        System.out.println("El valor de X" + sensor0);
-                        System.out.println("El valor de Y" + sensor1);
-                        System.out.println("El valor de Z" + sensor2);
 
                         sensorView0.setText(" X Axis: Acceleration = " + String.format("%.2f", numsensor0) + "G");    //update the textviews with sensor values
                         sensorView1.setText(" Y Axis: Acceleration = " + String.format("%.2f", numsensor1) + "G");
                         sensorView2.setText(" Z Axis: Acceleration = " + String.format("%.2f", numsensor2) + "G");
 
-                        if (status==1){
+                        if (status == 1) {
                             System.out.println("Estoy entrando al if de status");
                             ValoresX.add(numsensor0);
                             ValoresY.add(numsensor1);
                             ValoresZ.add(numsensor2);
-
 
 
                         }
@@ -335,12 +366,13 @@ public class DeviceControlActivity extends Activity {
             menu.findItem(R.id.menu_connect).setVisible(true);
             menu.findItem(R.id.menu_disconnect).setVisible(false);
         }
+        menu.findItem(R.id.menu_calibrate).setVisible(true);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId()) {
+        switch (item.getItemId()) {
             case R.id.menu_connect:
                 mBluetoothLeService.connect(mDeviceAddress);
                 return true;
@@ -349,6 +381,10 @@ public class DeviceControlActivity extends Activity {
                 return true;
             case android.R.id.home:
                 onBackPressed();
+                return true;
+            case R.id.menu_calibrate:
+                Intent calibrate = new Intent(this, CalibrationActivity.class);
+                startActivityForResult(calibrate, 2);
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -381,7 +417,7 @@ public class DeviceControlActivity extends Activity {
 
         for (BluetoothGattService gattService : gattServices) {
             uuid = gattService.getUuid().toString();
-            if(SampleGattAttributes.lookup(uuid, unknownServiceString)!=unknownServiceString) {
+            if (SampleGattAttributes.lookup(uuid, unknownServiceString) != unknownServiceString) {
                 HashMap<String, String> currentServiceData = new HashMap<String, String>();
                 currentServiceData.put(
                         LIST_NAME, SampleGattAttributes.lookup(uuid, unknownServiceString));
@@ -403,7 +439,7 @@ public class DeviceControlActivity extends Activity {
                     currentCharaData.put(
                             LIST_NAME, SampleGattAttributes.lookup(uuid, unknownCharaString));
                     currentCharaData.put(LIST_UUID, uuid);
-                    if(SampleGattAttributes.lookup(uuid, unknownCharaString)!=unknownCharaString){
+                    if (SampleGattAttributes.lookup(uuid, unknownCharaString) != unknownCharaString) {
                         gattCharacteristicGroupData.add(currentCharaData);
                     }
                 }
@@ -416,16 +452,19 @@ public class DeviceControlActivity extends Activity {
                 this,
                 gattServiceData,
                 android.R.layout.simple_expandable_list_item_2,
-                new String[] {LIST_NAME, LIST_UUID},
-                new int[] { android.R.id.text1, android.R.id.text2 },
+                new String[]{LIST_NAME, LIST_UUID},
+                new int[]{android.R.id.text1, android.R.id.text2},
                 gattCharacteristicData,
                 android.R.layout.simple_expandable_list_item_2,
-                new String[] {LIST_NAME, LIST_UUID},
-                new int[] { android.R.id.text1, android.R.id.text2 }
+                new String[]{LIST_NAME, LIST_UUID},
+                new int[]{android.R.id.text1, android.R.id.text2}
         );
         startService();
-        try { Thread.sleep(500); }
-        catch (InterruptedException ex) { android.util.Log.d("Hello: ", ex.toString()); }
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException ex) {
+            android.util.Log.d("Hello: ", ex.toString());
+        }
         startService();
     }
 
@@ -438,7 +477,7 @@ public class DeviceControlActivity extends Activity {
         return intentFilter;
     }
 
-    public float standerdize(float x, float in_min, float in_max){
+    public float standerdize(float x, float in_min, float in_max) {
         float out_min = -1;
         float out_max = 1;
         return ((x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min);
@@ -447,20 +486,20 @@ public class DeviceControlActivity extends Activity {
     Runnable updateTimerThread = new Runnable() {
         @Override
         public void run() {
-            timeInMilliseconds = SystemClock.uptimeMillis()-startTime;
-            updateTime = timeSwapBuff+timeInMilliseconds;
-            int secs=(int)(updateTime/1000);
-            int mins=secs/60;
-            secs%=60;
-            int milliseconds=(int)(updateTime%1000);
-            txtTimer.setText(""+mins+":"+String.format("%02d",secs)+":"
-                    +String.format("%03d",milliseconds));
-            customHandler.postDelayed(this,0);
-            if((secs==startSecs+1)){
-                System.out.println("Seconds: "+String.valueOf(secs));
-                startSecs=secs;
-                if(secs == 59){
-                    startSecs=0;
+            timeInMilliseconds = SystemClock.uptimeMillis() - startTime;
+            updateTime = timeSwapBuff + timeInMilliseconds;
+            int secs = (int) (updateTime / 1000);
+            int mins = secs / 60;
+            secs %= 60;
+            int milliseconds = (int) (updateTime % 1000);
+            txtTimer.setText("" + mins + ":" + String.format("%02d", secs) + ":"
+                    + String.format("%03d", milliseconds));
+            customHandler.postDelayed(this, 0);
+            if ((secs == startSecs + 1)) {
+                System.out.println("Seconds: " + String.valueOf(secs));
+                startSecs = secs;
+                if (secs == 59) {
+                    startSecs = 0;
                     timeProgress.incrementProgressBy(1);
                 }
                 timeProgress.incrementProgressBy(1);
@@ -468,4 +507,25 @@ public class DeviceControlActivity extends Activity {
         }
     };
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 2) {
+            if (resultCode == RESULT_OK) {
+                minX = data.getFloatExtra("minX",0f);
+                maxX = data.getFloatExtra("maxX",0f);
+                minY = data.getFloatExtra("minY",0f);
+                maxY = data.getFloatExtra("maxY",0f);
+                minZ = data.getFloatExtra("minZ",0f);
+                maxZ = data.getFloatExtra("maxZ",0f);
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putFloat("minX",minX);
+                editor.putFloat("maxX",maxX);
+                editor.putFloat("minY",minY);
+                editor.putFloat("maxY",maxY);
+                editor.putFloat("minZ",minZ);
+                editor.putFloat("maxZ",maxZ);
+                editor.apply();
+            }
+        }
+    }
 }

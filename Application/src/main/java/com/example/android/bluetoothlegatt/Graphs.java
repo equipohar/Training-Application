@@ -114,7 +114,7 @@ public class Graphs extends AppCompatActivity{
         alt_Confirm.setCancelable(true);
         alt_Confirm.setPositiveButton("Yes",new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-                Intent retBack = new Intent(Graphs.this,DeviceScanActivity.class);
+                Intent retBack = new Intent(Graphs.this,DeviceControlActivity.class);
                 startActivity(retBack);
                 finish();
             }

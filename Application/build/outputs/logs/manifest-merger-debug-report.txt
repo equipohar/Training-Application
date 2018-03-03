@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-68:12
-INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-68:12
-INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-68:12
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-66:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-66:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-66:12
 MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\8d4e3deaec4d64f21eacd8943e601269\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v13:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v13-25.0.1.aar\09ae8e9784cae40e9eb446db7ceb3d33\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:appcompat-v7:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.0.1.aar\6e1f5e24772c3a4573d4aa4cf6943a8c\AndroidManifest.xml:17:1-27:12
@@ -17,8 +17,8 @@ MERGED from [com.android.support:support-core-ui:25.0.1] C:\Users\Vitto Russo\.g
 MERGED from [com.android.support:animated-vector-drawable:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.1.aar\0c90285eb80ede59741200c369e8b5a5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:support-vector-drawable:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.0.1.aar\bc6c222f788555ed095398619e336cbc\AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:support-compat:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-compat-25.0.1.aar\ad94b42b0aed4964ced28d98adea49dc\AndroidManifest.xml:17:1-27:12
-INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-68:12
-INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-68:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-66:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:16:1-66:12
 	package
 		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:17:5-50
 	android:versionName
@@ -74,7 +74,7 @@ ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\
 	android:name
 		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:42:22-78
 application
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:44:5-66:19
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:44:5-64:19
 MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\8d4e3deaec4d64f21eacd8943e601269\AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\8d4e3deaec4d64f21eacd8943e601269\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-v13:25.0.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v13-25.0.1.aar\09ae8e9784cae40e9eb446db7ceb3d33\AndroidManifest.xml:25:5-20
@@ -107,38 +107,36 @@ MERGED from [com.android.support:support-compat:25.0.1] C:\Users\Vitto Russo\.gr
 		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:45:9-43
 	android:theme
 		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:47:9-40
-activity#com.example.android.bluetoothlegatt.DeviceScanActivity
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:48:9-56:20
-	android:label
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:50:13-45
-	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:49:13-47
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:51:13-55:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:52:17-69
-	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:52:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:54:17-77
-	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:54:27-74
 activity#com.example.android.bluetoothlegatt.DeviceControlActivity
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:57:9-59
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:48:9-54:20
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:57:19-56
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:48:19-56
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:49:13-53:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:50:17-69
+	android:name
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:50:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:52:17-77
+	android:name
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:52:27-74
 activity#com.example.android.bluetoothlegatt.Graphs
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:58:9-60:54
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:55:9-57:54
 	android:theme
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:60:13-51
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:57:13-51
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:59:13-35
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:56:13-35
 service#com.example.android.bluetoothlegatt.BluetoothLeService
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:62:9-64:38
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:59:9-61:38
 	android:enabled
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:64:13-35
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:61:13-35
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:63:13-47
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:60:13-47
+activity#com.example.android.bluetoothlegatt.CalibrationActivity
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:63:9-66
+	android:name
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml:63:19-54
 uses-sdk
 INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\TestingApp\Application\src\main\AndroidManifest.xml

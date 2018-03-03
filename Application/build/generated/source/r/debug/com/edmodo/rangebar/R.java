@@ -21,8 +21,8 @@ public final class R {
         public static final int tickHeight = 0x7f020105;
     }
     public static final class drawable {
-        public static final int seek_thumb_normal = 0x7f060060;
-        public static final int seek_thumb_pressed = 0x7f060061;
+        public static final int seek_thumb_normal = 0x7f060066;
+        public static final int seek_thumb_pressed = 0x7f060067;
     }
     public static final class string {
         public static final int app_name = 0x7f0c001f;
