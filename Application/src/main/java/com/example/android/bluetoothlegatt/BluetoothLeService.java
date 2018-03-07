@@ -151,14 +151,14 @@ public class BluetoothLeService extends Service {
             }
         }
         */
-        Log.v("Lilypad BLE","BroadcastUpdate()");
+        //Log.v("Lilypad BLE","BroadcastUpdate()");
 
         final byte[] data = characteristic.getValue();
 
-        Log.v("Lilypad BLE","data.length: " +  data.length);
+        //Log.v("Lilypad BLE","data.length: " +  data.length);
 
         if (data != null && data.length > 0) {
-            System.out.println("Lilypad BLE: " + new String(data));
+            //System.out.println("Lilypad BLE: " + new String(data));
 
             intent.putExtra(EXTRA_DATA, new String(data));
         }

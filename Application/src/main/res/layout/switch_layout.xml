@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:foregroundGravity="center_vertical|center_horizontal"
+    android:gravity="center_horizontal|center"
+    android:orientation="horizontal">
+
+    <Switch
+        android:id="@+id/switchForActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:text="Automatic: "
+        android:textOff="Manual: "
+        android:textOn="Automatic: " />
+
+</RelativeLayout>
