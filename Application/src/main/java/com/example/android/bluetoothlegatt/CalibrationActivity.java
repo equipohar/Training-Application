@@ -93,6 +93,7 @@ public class CalibrationActivity extends Activity {
     private Switch switchMode;
     private boolean switchBol;
     private ArrayList<Float> buffer = new ArrayList<>();
+    private float[] flobuffer = new float[50];
     private int counter=0;
     private Thread threadMin,threadMax;
 
@@ -254,8 +255,11 @@ public class CalibrationActivity extends Activity {
                         sensorView.setText(handle + String.format("%.2f", numsensor));
                         buffer.add(counter,numsensor);
                         counter++;
-                        if(counter==100){
+                        if(counter==50){
+                            System.out.println("Tamaño antes de reset: "+buffer.size());
+                            System.out.println("Tamaño del contador: "+ String.valueOf(counter));
                             counter = 0;
+                            buffer.clear();
                         }
 
 
@@ -394,7 +398,7 @@ public class CalibrationActivity extends Activity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 switchBol = isChecked;
                 if(isChecked){
-                    btnOk.setText("Start");
+                    btnOk.setText("Start Automatic Calibration");
                 }else{
                     btnOk.setText("Confirm Value");
                 }
@@ -548,6 +552,7 @@ public class CalibrationActivity extends Activity {
                 runOnUiThread(new Runnable() {
                     public void run() {
                         System.out.println("Curbuton: "+button);
+                        System.out.println("Tamaño: " + buffer.size());
                         switch (button){
                             case (1):
                                 minX = buffer.get(buffer.indexOf(Collections.min(buffer)));
@@ -572,6 +577,35 @@ public class CalibrationActivity extends Activity {
                             case (6):
                                 maxZ = buffer.get(buffer.indexOf(Collections.max(buffer)));
                                 tvMaxZ.setText(textMax + String.valueOf(maxZ));
+                                break;
+                        }
+                        if(curBtn<6){
+                            curBtn++;
+                        }
+                        switch (curBtn){
+                            case (1):
+                                tvOnAxis.setText("Find the Minimum Value of X");
+                                img.setImageResource(R.drawable.minx720);
+                                break;
+                            case (2):
+                                tvOnAxis.setText("Find the Maximum Value of X");
+                                img.setImageResource(R.drawable.maxx720);
+                                break;
+                            case (3):
+                                tvOnAxis.setText("Find the Minimum Value of Y");
+                                img.setImageResource(R.drawable.miny720);
+                                break;
+                            case (4):
+                                tvOnAxis.setText("Find the Maximum Value of Y");
+                                img.setImageResource(R.drawable.maxy720);
+                                break;
+                            case (5):
+                                tvOnAxis.setText("Find the Minimum Value of Z");
+                                img.setImageResource(R.drawable.minz720);
+                                break;
+                            case (6):
+                                tvOnAxis.setText("Find the Maximum Value of Z");
+                                img.setImageResource(R.drawable.maxz720);
                                 break;
                         }
                     }

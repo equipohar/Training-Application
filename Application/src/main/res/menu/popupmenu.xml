@@ -19,5 +19,17 @@
     <item
         android:id="@+id/six"
         android:title="Jumping"/>
+    <item
+        android:id="@+id/seven"
+        android:title="Lifting_Weight"/>
+    <item
+        android:id="@+id/eight"
+        android:title="Squats"/>
+    <item
+        android:id="@+id/nine"
+        android:title="Push_Ups"/>
+    <item
+        android:id="@+id/ten"
+        android:title="Riding_Bicycle"/>
 
 </menu>
