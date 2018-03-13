@@ -93,6 +93,7 @@ public class CalibrationActivity extends Activity {
     private Switch switchMode;
     private boolean switchBol;
     private ArrayList<Float> buffer = new ArrayList<>();
+    private ArrayList<Float> bufferTemp = new ArrayList<>();
     private float[] flobuffer = new float[50];
     private int counter=0;
     private Thread threadMin,threadMax;
@@ -545,7 +546,7 @@ public class CalibrationActivity extends Activity {
             @Override
             public void run() {
                 try {
-                    Thread.sleep(5000);
+                    Thread.sleep(4000);
                 }
                 catch (InterruptedException ex) {
                 }
@@ -610,6 +611,11 @@ public class CalibrationActivity extends Activity {
                         }
                     }
                 });
+                try {
+                    Thread.sleep(1000);
+                }
+                catch (InterruptedException ex) {
+                }
                 waitDialog.dismiss();
             }
         };
