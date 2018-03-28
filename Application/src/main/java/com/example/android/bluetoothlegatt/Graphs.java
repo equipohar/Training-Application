@@ -170,7 +170,7 @@ public class Graphs extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 if ((Label!=null) && (porIntRight!=porIntLeft)){
-                    sendDB(ValoresX,ValoresY,ValoresZ);
+                    //sendDB(ValoresX,ValoresY,ValoresZ);
                     try {
                         CreateCSV(ValoresX,ValoresY,ValoresZ);
                         numCSV = Integer.valueOf(editSesion.getText().toString());
