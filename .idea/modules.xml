@@ -3,12 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Application/Application.iml" filepath="$PROJECT_DIR$/Application/Application.iml" />
-      <module fileurl="file://C:\Users\vitto\Desktop\Android Codes\Training-Application\TestingApp.iml" filepath="C:\Users\vitto\Desktop\Android Codes\Training-Application\TestingApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/Training-Application.iml" filepath="$PROJECT_DIR$/Training-Application.iml" />
       <module fileurl="file://$PROJECT_DIR$/opencsv/opencsv.iml" filepath="$PROJECT_DIR$/opencsv/opencsv.iml" />
-      <module fileurl="file://C:\Users\vitto\Desktop\Android Codes\Training-Application\opencsv\opencsv.iml" filepath="C:\Users\vitto\Desktop\Android Codes\Training-Application\opencsv\opencsv.iml" />
       <module fileurl="file://$PROJECT_DIR$/opencsv-4.0/opencsv-4.0.iml" filepath="$PROJECT_DIR$/opencsv-4.0/opencsv-4.0.iml" />
-      <module fileurl="file://C:\Users\vitto\Desktop\Android Codes\Training-Application\opencsv-4.0\opencsv-4.0.iml" filepath="C:\Users\vitto\Desktop\Android Codes\Training-Application\opencsv-4.0\opencsv-4.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/volley/volley.iml" filepath="$PROJECT_DIR$/volley/volley.iml" />
     </modules>
   </component>

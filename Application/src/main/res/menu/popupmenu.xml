@@ -21,15 +21,14 @@
         android:title="Jumping"/>
     <item
         android:id="@+id/seven"
-        android:title="Lifting_Weight"/>
+        android:title="Laying_Down"/>
     <item
         android:id="@+id/eight"
-        android:title="Squats"/>
+        android:title="Laying_Up"/>
     <item
         android:id="@+id/nine"
-        android:title="Push_Ups"/>
+        android:title="Squatting"/>
     <item
         android:id="@+id/ten"
-        android:title="Riding_Bicycle"/>
-
+        android:title="Push_Ups"/>
 </menu>

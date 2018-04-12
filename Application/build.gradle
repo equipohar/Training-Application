@@ -1,10 +1,11 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.1.0'
     }
 }
 
@@ -16,6 +17,7 @@ allprojects {
         maven { url "https://jitpack.io" }
         jcenter()
 
+        google()
     }
 }
 dependencies {
@@ -44,7 +46,7 @@ List<String> dirs = [
 
 android {
     compileSdkVersion 25
-    buildToolsVersion '26.0.2'
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         minSdkVersion 19
