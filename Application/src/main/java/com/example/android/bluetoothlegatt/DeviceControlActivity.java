@@ -170,7 +170,6 @@ public class DeviceControlActivity extends Activity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    // The toggle is enabled
                     status = 1;
                     startTime = 0L;
                     timeInMilliseconds = 0L;
@@ -181,7 +180,6 @@ public class DeviceControlActivity extends Activity {
                     customHandler.postDelayed(updateTimerThread, 0);
 
                 } else {
-                    // The toggle is disabled
                     timeSwapBuff += timeInMilliseconds;
                     customHandler.removeCallbacks(updateTimerThread);
                     status = 0;
@@ -221,7 +219,7 @@ public class DeviceControlActivity extends Activity {
         }
     }
 
-    // Code to manage Service lifecycle.
+
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
 
         @Override
@@ -231,7 +229,6 @@ public class DeviceControlActivity extends Activity {
                 Log.e(TAG, "Unable to initialize Bluetooth");
                 finish();
             }
-            // Automatically connects to the device upon successful start-up initialization.
             mBluetoothLeService.connect(mDeviceAddress);
         }
 
@@ -241,12 +238,6 @@ public class DeviceControlActivity extends Activity {
         }
     };
 
-    // Handles various events fired by the Service.
-    // ACTION_GATT_CONNECTED: connected to a GATT server.
-    // ACTION_GATT_DISCONNECTED: disconnected from a GATT server.
-    // ACTION_GATT_SERVICES_DISCOVERED: discovered GATT services.
-    // ACTION_DATA_AVAILABLE: received data from the device.  This can be a result of read
-    //                        or notification operations.
     private final BroadcastReceiver mGattUpdateReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -260,21 +251,19 @@ public class DeviceControlActivity extends Activity {
                 updateConnectionState(R.string.disconnected);
                 invalidateOptionsMenu();
             } else if (BluetoothLeService.ACTION_GATT_SERVICES_DISCOVERED.equals(action)) {
-                // Show all the supported services and characteristics on the user interface.
                 displayGattServices(mBluetoothLeService.getSupportedGattServices());
             } else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
                 stringData = intent.getStringExtra(BluetoothLeService.EXTRA_DATA);
                 displayData(stringData);
-                String readMessage = stringData;                                                                // msg.arg1 = bytes from connect thread
-                recDataString.append(readMessage);                                      //keep appending to string until ~
-                int endOfLineIndex = recDataString.indexOf("~");                    // determine the end-of-line
-                if (endOfLineIndex > 0) {                                           // make sure there data before ~
-                    String dataInPrint = recDataString.substring(0, endOfLineIndex);    // extract string
-                    int dataLength = dataInPrint.length();                          //get length of data received
+                String readMessage = stringData;
+                recDataString.append(readMessage);
+                int endOfLineIndex = recDataString.indexOf("~");
+                if (endOfLineIndex > 0) {
+                    String dataInPrint = recDataString.substring(0, endOfLineIndex);
+                    int dataLength = dataInPrint.length();
 
 
-                    if (recDataString.charAt(0) == '#')                             //if it starts with # we know it is what we are looking for
-                    {
+                    if (recDataString.charAt(0) == '#') {
                         StringTokenizer tokens = new StringTokenizer(dataInPrint, "+");
                         String sensor0 = tokens.nextToken().replace("#", "");
                         String sensor1 = tokens.nextToken();
@@ -285,7 +274,7 @@ public class DeviceControlActivity extends Activity {
                         numsensor2 = standerdize(Float.parseFloat(sensor2), minZ, maxZ);  // Pin Z
 
 
-                        sensorView0.setText(" X Axis: Acceleration = " + String.format("%.2f", numsensor0) + "G");    //update the textviews with sensor values
+                        sensorView0.setText(" X Axis: Acceleration = " + String.format("%.2f", numsensor0) + "G");
                         sensorView1.setText(" Y Axis: Acceleration = " + String.format("%.2f", numsensor1) + "G");
                         sensorView2.setText(" Z Axis: Acceleration = " + String.format("%.2f", numsensor2) + "G");
 
@@ -294,7 +283,7 @@ public class DeviceControlActivity extends Activity {
                             ValoresX.add(numsensor0);
                             ValoresY.add(numsensor1);
                             ValoresZ.add(numsensor2);
-
+                            Log.v("TAG","Size: "+ValoresX.size());
 
                         }
 
@@ -315,8 +304,6 @@ public class DeviceControlActivity extends Activity {
                     mGattCharacteristics.get(0).get(0);
             final int charaProp = characteristic.getProperties();
             if ((charaProp | BluetoothGattCharacteristic.PROPERTY_READ) > 0) {
-                // If there is an active notification on a characteristic, clear
-                // it first so it doesn't update the data field on the user interface.
                 if (mNotifyCharacteristic != null) {
                     mBluetoothLeService.setCharacteristicNotification(
                             mNotifyCharacteristic, false);
@@ -431,7 +418,6 @@ public class DeviceControlActivity extends Activity {
                 ArrayList<BluetoothGattCharacteristic> charas =
                         new ArrayList<BluetoothGattCharacteristic>();
 
-                // Loops through available Characteristics.
                 for (BluetoothGattCharacteristic gattCharacteristic : gattCharacteristics) {
                     charas.add(gattCharacteristic);
                     HashMap<String, String> currentCharaData = new HashMap<String, String>();

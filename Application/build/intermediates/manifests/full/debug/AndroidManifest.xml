@@ -15,23 +15,14 @@
  limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.bluetoothlegatt"
+    package="com.example.vittorusso.recognition"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="19"
-        android:targetSdkVersion="25" />
+        android:minSdkVersion="21"
+        android:targetSdkVersion="27" />
 
-    <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
-
-
-    <!--
-    Declare this required feature if you want to make the app available to BLE-capable
-    devices only.  If you want to make your app available to devices that don't support BLE,
-    you should omit this in the manifest.  Instead, determine BLE capability by using
-    PackageManager.hasSystemFeature(FEATURE_BLUETOOTH_LE)
-    -->
     <uses-feature
         android:name="android.hardware.bluetooth_le"
         android:required="true" />

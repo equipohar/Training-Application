@@ -1,99 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://scemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    android:orientation="vertical"
     tools:context="com.example.android.bluetoothlegatt.Graphs">
 
-    <Button
-        android:id="@+id/btnActivity"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:text="Activity" />
-
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/lineChart"
-        android:layout_width="433dp"
-        android:layout_height="350dp"
-        android:layout_alignParentStart="false"
-        android:layout_gravity="center"
-        android:layout_above="@+id/rangebar"></com.github.mikephil.charting.charts.LineChart>
-
-    <com.edmodo.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/rangebar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        custom:barColor="@color/wl_gray"
-        custom:tickCount="21"
-        android:layout_above="@+id/textLeft" />
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btnSend"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:text="Send Data" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editID"
+            android:layout_alignBottom="@+id/editID"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:text="Identification / Sesion"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Identification:" />
 
-    <TextView
-        android:id="@+id/textLeft"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btnActivity"
-        android:layout_alignParentStart="true"
-        android:text="Left Index"
-        android:textColor="@color/wl_gray" />
+        <EditText
+            android:id="@+id/editID"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lineChart"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/editSesion"
+            android:layout_weight="2"
+            android:backgroundTint="@android:color/darker_gray"
+            android:ems="10"
+            android:hint="ID"
+            android:inputType="number"
+            android:textColor="@color/wl_gray" />
 
-    <TextView
-        android:id="@+id/textRight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btnSend"
-        android:layout_alignParentEnd="true"
-        android:text="Right Index"
-        android:textColor="@color/wl_gray" />
+        <EditText
+            android:id="@+id/editSesion"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lineChart"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:ems="10"
+            android:hint="Sesion"
+            android:inputType="number"
+            android:textColor="@color/wl_gray" />
 
-    <EditText
-        android:id="@+id/editID"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/lineChart"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/editSesion"
-        android:backgroundTint="@android:color/darker_gray"
-        android:ems="10"
-        android:hint="ID"
-        android:inputType="number"
-        android:textColor="@color/wl_gray" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Identification / Sesion"
-        android:textAlignment="textStart"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        tools:text="Identification:"
-        android:layout_alignBaseline="@+id/editID"
-        android:layout_alignBottom="@+id/editID"
-        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editSesion"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/lineChart"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:backgroundTint="@android:color/darker_gray"
-        android:ems="10"
-        android:hint="Sesion"
-        android:inputType="number"
-        android:textColor="@color/wl_gray" />
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rangebar"
+            android:layout_alignParentStart="false"
+            android:layout_gravity="center"
+            android:layout_weight="1">
 
-</RelativeLayout>
+        </com.github.mikephil.charting.charts.LineChart>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnActivity"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:text="Activity" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:text="Send Data" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

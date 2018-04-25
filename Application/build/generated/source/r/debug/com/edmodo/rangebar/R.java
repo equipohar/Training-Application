@@ -8,31 +8,31 @@ package com.edmodo.rangebar;
 
 public final class R {
     public static final class attr {
-        public static final int barColor = 0x7f020030;
-        public static final int barWeight = 0x7f020032;
-        public static final int connectingLineColor = 0x7f020056;
-        public static final int connectingLineWeight = 0x7f020057;
-        public static final int thumbColorNormal = 0x7f0200fc;
-        public static final int thumbColorPressed = 0x7f0200fd;
-        public static final int thumbImageNormal = 0x7f0200fe;
-        public static final int thumbImagePressed = 0x7f0200ff;
-        public static final int thumbRadius = 0x7f020100;
-        public static final int tickCount = 0x7f020104;
-        public static final int tickHeight = 0x7f020105;
+        public static final int barColor = 0x7f020036;
+        public static final int barWeight = 0x7f020038;
+        public static final int connectingLineColor = 0x7f020062;
+        public static final int connectingLineWeight = 0x7f020063;
+        public static final int thumbColorNormal = 0x7f02012d;
+        public static final int thumbColorPressed = 0x7f02012e;
+        public static final int thumbImageNormal = 0x7f02012f;
+        public static final int thumbImagePressed = 0x7f020130;
+        public static final int thumbRadius = 0x7f020131;
+        public static final int tickCount = 0x7f020135;
+        public static final int tickHeight = 0x7f020136;
     }
     public static final class drawable {
         public static final int seek_thumb_normal = 0x7f060066;
         public static final int seek_thumb_pressed = 0x7f060067;
     }
     public static final class string {
-        public static final int app_name = 0x7f0c001f;
+        public static final int app_name = 0x7f0c001d;
     }
     public static final class style {
-        public static final int AppBaseTheme = 0x7f0d0004;
-        public static final int AppTheme = 0x7f0d0005;
+        public static final int AppBaseTheme = 0x7f0d0005;
+        public static final int AppTheme = 0x7f0d0006;
     }
     public static final class styleable {
-        public static final int[] RangeBar = { 0x7f020030, 0x7f020032, 0x7f020056, 0x7f020057, 0x7f0200fc, 0x7f0200fd, 0x7f0200fe, 0x7f0200ff, 0x7f020100, 0x7f020104, 0x7f020105 };
+        public static final int[] RangeBar = { 0x7f020036, 0x7f020038, 0x7f020062, 0x7f020063, 0x7f02012d, 0x7f02012e, 0x7f02012f, 0x7f020130, 0x7f020131, 0x7f020135, 0x7f020136 };
         public static final int RangeBar_barColor = 0;
         public static final int RangeBar_barWeight = 1;
         public static final int RangeBar_connectingLineColor = 2;

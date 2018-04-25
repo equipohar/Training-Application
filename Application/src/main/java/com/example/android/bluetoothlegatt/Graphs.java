@@ -57,10 +57,7 @@ public class Graphs extends AppCompatActivity{
     Button btnActivity,btnSend;
     String Label;
     String LabelID;
-    TextView textLeft, textRight;
     EditText editID,editSesion;
-    float porLeft, porRight,indexLeft,indexRight;
-    int porIntLeft, porIntRight;
     private int numCSV;
 
 
@@ -70,28 +67,14 @@ public class Graphs extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_graphs);
-        textRight = (TextView) findViewById(R.id.textRight);
-        textLeft = (TextView) findViewById(R.id.textLeft);
-        editID = (EditText) findViewById(R.id.editID);
-        editSesion = (EditText) findViewById(R.id.editSesion);
-        btnSend = (Button) findViewById(R.id.btnSend);
-        btnActivity = (Button) findViewById(R.id.btnActivity);
-        RangeBar rangebar = (RangeBar) findViewById(R.id.rangebar);
+        editID = findViewById(R.id.editID);
+        editSesion = findViewById(R.id.editSesion);
+        btnSend = findViewById(R.id.btnSend);
+        btnActivity = findViewById(R.id.btnActivity);
 
         final ArrayList<Float> ValoresX =  (ArrayList<Float>)getIntent().getSerializableExtra("Valores_de_X");
         final ArrayList<Float> ValoresY =  (ArrayList<Float>)getIntent().getSerializableExtra("Valores_de_Y");
         final ArrayList<Float> ValoresZ =  (ArrayList<Float>)getIntent().getSerializableExtra("Valores_de_Z");
-
-        int leftThumbIndex = rangebar.getLeftIndex();
-        int rightThumbIndex = rangebar.getRightIndex();
-        indexLeft = (float) leftThumbIndex;
-        indexRight = (float) rightThumbIndex;
-        porLeft = (indexLeft/20)*(ValoresX.size());
-        porRight = (indexRight/20)*(ValoresX.size());
-        porIntLeft =(int) Math.floor(porLeft);
-        porIntRight =(int) Math.floor(porRight);
-        textLeft.setText(String.valueOf(leftThumbIndex*5+"%"));
-        textRight.setText(String.valueOf(rightThumbIndex*5+"%"));
 
         final SharedPreferences sharedPref = Graphs.this.getPreferences(Context.MODE_PRIVATE);
         int defaultValue = getResources().getInteger(R.integer.saved_high_score_default_key);
@@ -149,28 +132,11 @@ public class Graphs extends AppCompatActivity{
             }
         });
 
-        rangebar.setOnRangeBarChangeListener(new RangeBar.OnRangeBarChangeListener() {
-            @Override
-            public void onIndexChangeListener(RangeBar rangeBar, int leftThumbIndex, int rightThumbIndex) {
-                //Code using the leftThumbIndex and rightThumbIndex to update the index values.
-                indexLeft = (float) leftThumbIndex;
-                indexRight = (float) rightThumbIndex;
-                porLeft = (indexLeft/20)*(ValoresX.size());
-                porRight = (indexRight/20)*(ValoresX.size());
-                porIntLeft =(int) Math.floor(porLeft);
-                porIntRight =(int) Math.floor(porRight);
-                textLeft.setText(String.valueOf(leftThumbIndex*5+"%"));
-                textRight.setText(String.valueOf(rightThumbIndex*5+"%"));
-
-            }
-        });
-
 
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if ((Label!=null) && (porIntRight!=porIntLeft)){
-                    //sendDB(ValoresX,ValoresY,ValoresZ);
+                if ((Label!=null)){
                     try {
                         CreateCSV(ValoresX,ValoresY,ValoresZ);
                         numCSV = Integer.valueOf(editSesion.getText().toString());
@@ -196,22 +162,16 @@ public class Graphs extends AppCompatActivity{
         DateFormat date = new SimpleDateFormat("mm:ss");
 
 
-        lineChart = (LineChart) findViewById(R.id.lineChart);
+        lineChart = findViewById(R.id.lineChart);
 
         ArrayList<Entry> yAXESx = new ArrayList<>();
         ArrayList<Entry> yAXESy = new ArrayList<>();
         ArrayList<Entry> yAXESz = new ArrayList<>();
 
         for(int i=0;i<(ValoresX.size());i++){
-            /*date.setTimeZone(TimeZone.getTimeZone("GMT-5:00"));
-            String localTime = date.format(currentLocalTime);
-            Float localTimeFlo = Float.parseFloat(localTime);
-            yAXESx.add(new Entry(localTimeFlo,ValoresX.get(i)));
-            yAXESy.add(new Entry(localTimeFlo,ValoresY.get(i)));
-            yAXESz.add(new Entry(localTimeFlo,ValoresZ.get(i)));*/
-            yAXESx.add(new Entry(new Float ((i-1)*0.04),ValoresX.get(i)));
-            yAXESy.add(new Entry(new Float ((i-1)*0.04),ValoresY.get(i)));
-            yAXESz.add(new Entry(new Float ((i-1)*0.04),ValoresZ.get(i)));
+            yAXESx.add(new Entry(new Float ((i-1)*0.05),ValoresX.get(i)));
+            yAXESy.add(new Entry(new Float ((i-1)*0.05),ValoresY.get(i)));
+            yAXESz.add(new Entry(new Float ((i-1)*0.05),ValoresZ.get(i)));
         }
 
         ArrayList<ILineDataSet> lineDataSets = new ArrayList<>();
@@ -241,7 +201,7 @@ public class Graphs extends AppCompatActivity{
 
     }
 
-    public void sendDB(final ArrayList<Float> ValoresX, final ArrayList<Float> ValoresY, final ArrayList<Float> ValoresZ){
+    /*public void sendDB(final ArrayList<Float> ValoresX, final ArrayList<Float> ValoresY, final ArrayList<Float> ValoresZ){
         final ProgressDialog progress = new ProgressDialog(Graphs.this);
         progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progress.setTitle("Loading");
@@ -275,17 +235,17 @@ public class Graphs extends AppCompatActivity{
                     queue.add(stringRequest);
                 }
 
-                /*try {
+                try {
                     Thread.sleep(((porIntRight-porIntLeft)/10)*1000);
                 }
                 catch (InterruptedException ex) {
 
-                }*/
+                }
                 progress.dismiss();
             }
         };
         mThread.start();
-    }
+    }*/
 
     public void CreateCSV(final ArrayList<Float> ValoresX, final ArrayList<Float> ValoresY, final ArrayList<Float> ValoresZ) throws IOException{
         File mediaStorageDir = new File(Environment.getExternalStorageDirectory(), "CSVFolder");
@@ -299,7 +259,7 @@ public class Graphs extends AppCompatActivity{
         System.out.println(mypath);
         List<String[]> data = new ArrayList<String[]>();
 
-        for(int i = porIntLeft; i < porIntRight; i++){
+        for(int i = 0; i < ValoresX.size(); i++){
             data.add(new String[] {editSesion.getText().toString(),String.valueOf(ValoresX.get(i)),String.valueOf(ValoresY.get(i)),String.valueOf(ValoresZ.get(i)),LabelID,editID.getText().toString()});
         }
         writer.writeAll(data);
