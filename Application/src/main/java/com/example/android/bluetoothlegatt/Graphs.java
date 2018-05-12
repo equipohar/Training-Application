@@ -17,9 +17,12 @@ import android.support.v7.widget.PopupMenu;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 
@@ -53,14 +56,15 @@ import java.util.concurrent.ExecutionException;
 
 public class Graphs extends AppCompatActivity{
 
-    LineChart lineChart;
-    Button btnActivity,btnSend;
-    String Label;
-    String LabelID;
-    EditText editID,editSesion;
+    private LineChart lineChart;
+    private Button btnSend;
+    private Spinner spinner;
+    private String Label;
+    private EditText editID,editSesion;
     private int numCSV;
 
-
+    private static final String[] paths = {"Standing Still", "Walking", "Jogging", "Going Up Stairs",
+            "Going Down Stairs", "Jumping", "Laying Down", "Laying Up", "Squatting", "Push Ups"};
 
 
     @Override
@@ -70,7 +74,25 @@ public class Graphs extends AppCompatActivity{
         editID = findViewById(R.id.editID);
         editSesion = findViewById(R.id.editSesion);
         btnSend = findViewById(R.id.btnSend);
-        btnActivity = findViewById(R.id.btnActivity);
+        spinner = findViewById(R.id.spinner);
+
+        ArrayAdapter adapter = new ArrayAdapter(Graphs.this,
+                android.R.layout.simple_spinner_item,paths);
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Label = Integer.toString(position+1);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         final ArrayList<Float> ValoresX =  (ArrayList<Float>)getIntent().getSerializableExtra("Valores_de_X");
         final ArrayList<Float> ValoresY =  (ArrayList<Float>)getIntent().getSerializableExtra("Valores_de_Y");
@@ -110,27 +132,6 @@ public class Graphs extends AppCompatActivity{
         });
 
 
-        btnActivity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                PopupMenu popupMenu = new PopupMenu(Graphs.this,btnActivity);
-                popupMenu.getMenuInflater().inflate(R.menu.popupmenu, popupMenu.getMenu());
-
-                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                    @Override
-                    public boolean onMenuItemClick(MenuItem item) {
-                        Label = item.getTitle().toString();
-                        LabelID=Integer.toString(item.getItemId());
-                        btnActivity.setText(Label);
-                        return true;
-                    }
-                });
-
-                popupMenu.show();
-
-            }
-        });
 
 
         btnSend.setOnClickListener(new View.OnClickListener() {
@@ -201,52 +202,6 @@ public class Graphs extends AppCompatActivity{
 
     }
 
-    /*public void sendDB(final ArrayList<Float> ValoresX, final ArrayList<Float> ValoresY, final ArrayList<Float> ValoresZ){
-        final ProgressDialog progress = new ProgressDialog(Graphs.this);
-        progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-        progress.setTitle("Loading");
-        progress.setMessage("Wait while data is sent to database..." + String.valueOf(ValoresX.size()));
-        progress.setCancelable(false);
-        progress.show();
-
-
-        Thread mThread = new Thread() {
-            @Override
-            public void run() {
-                RequestQueue queue = Volley.newRequestQueue(Graphs.this);
-                for (int i = porIntLeft; i < porIntRight; i++) {
-                    //String url = "http://sistelemetria-sistelemetria.rhcloud.com/save_har.php?x=" + String.valueOf(ValoresX.get(i)) + "&y=" + String.valueOf(ValoresY.get(i)) + "&z="+ String.valueOf(ValoresZ.get(i));
-                    String url = "http://track-mypower.tk/measurements/training_data/new?x=" + String.valueOf(ValoresX.get(i)) + "&y=" + String.valueOf(ValoresY.get(i)) + "&z=" + String.valueOf(ValoresZ.get(i)) + "&label=\"" + Label + "\"";
-                    //String url = "http://energyharvesting.herokuapp.com/measurements/training_data/new?x=" + String.valueOf(ValoresX.get(i)) + "&y=" + String.valueOf(ValoresY.get(i)) + "&z=" + String.valueOf(ValoresZ.get(i)) + "&label=\"" + Label + "\"";
-                    // Request a string response from the provided URL.
-                    StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
-                            new Response.Listener<String>() {
-                                @Override
-                                public void onResponse(String response) {
-
-                                }
-                            }, new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-
-                        }
-                    });
-                    //stringRequest.setRetryPolicy(new DefaultRetryPolicy(DefaultRetryPolicy.DEFAULT_TIMEOUT_MS * 2, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-                    queue.add(stringRequest);
-                }
-
-                try {
-                    Thread.sleep(((porIntRight-porIntLeft)/10)*1000);
-                }
-                catch (InterruptedException ex) {
-
-                }
-                progress.dismiss();
-            }
-        };
-        mThread.start();
-    }*/
-
     public void CreateCSV(final ArrayList<Float> ValoresX, final ArrayList<Float> ValoresY, final ArrayList<Float> ValoresZ) throws IOException{
         File mediaStorageDir = new File(Environment.getExternalStorageDirectory(), "CSVFolder");
         if (!mediaStorageDir.exists()) {
@@ -260,7 +215,8 @@ public class Graphs extends AppCompatActivity{
         List<String[]> data = new ArrayList<String[]>();
 
         for(int i = 0; i < ValoresX.size(); i++){
-            data.add(new String[] {editSesion.getText().toString(),String.valueOf(ValoresX.get(i)),String.valueOf(ValoresY.get(i)),String.valueOf(ValoresZ.get(i)),LabelID,editID.getText().toString()});
+            Log.v("TAG",editSesion.getText().toString()+" "+String.valueOf(ValoresX.get(i))+" "+String.valueOf(ValoresY.get(i))+" "+String.valueOf(ValoresZ.get(i))+" "+Label+" "+editID.getText().toString());
+            data.add(new String[] {editSesion.getText().toString(),String.valueOf(ValoresX.get(i)),String.valueOf(ValoresY.get(i)),String.valueOf(ValoresZ.get(i)),Label,editID.getText().toString()});
         }
         writer.writeAll(data);
         writer.close();
