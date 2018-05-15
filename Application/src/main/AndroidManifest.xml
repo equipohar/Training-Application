@@ -18,7 +18,6 @@
     android:versionCode="1"
     android:versionName="1.0">
 
-
     <uses-feature
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
@@ -37,25 +36,46 @@
         android:icon="@mipmap/ic_launcher"
         android:label="Training"
         android:theme="@style/AppTheme">
-        <activity android:name=".DeviceControlActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Graphs"
-            android:theme="@style/Theme.AppCompat" />
 
         <service
             android:name=".BluetoothLeService"
             android:enabled="true" />
 
-        <activity android:name=".CalibrationActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DeviceControlActivity">
+        </activity>
+
+        <activity
+            android:name=".DatabaseActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+
+        <activity
+            android:name=".Graphs"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+
+        <activity
+            android:name=".CalibrationActivity">
+        </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+
+
+
+
     </application>
 
 </manifest>

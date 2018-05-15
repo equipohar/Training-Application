@@ -39,6 +39,9 @@
 
     <string name="textMin">Min: </string>
     <string name="textMax">Max: </string>
+    <string name="direct">Direct to Database</string>
+    <string name="csv">Create CSV File</string>
+    <string name="root">http://track-mymovement.tk/save_hartest.php</string>
 
 
 </resources>

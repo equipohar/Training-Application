@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-61:12
-INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-61:12
-INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-61:12
-INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-61:12
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-70:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-70:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-70:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-70:12
 MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\b2c1cf90b2a57494ff31c0ffb5fc2c85\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\79e928342a290e8322e17875e6be64d8\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\334f8fe3090a8601a4bb096824b6d9fe\AndroidManifest.xml:17:1-22:12
@@ -21,9 +21,9 @@ MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Vitto Russo\.gradle\
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2b631f3a80aca48456753e010beca842\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6d6ea2c391c56531b0fb34aee77c0cd0\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0e09fa2912544fe4bbe4f8a32bc956d1\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-61:12
-INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-61:12
-INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-61:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-70:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-70:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-70:12
 	package
 		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:17:5-50
 		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
@@ -39,95 +39,105 @@ INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application
 		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
 uses-feature#android.hardware.bluetooth_le
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:22:5-24:35
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:21:5-23:35
 	android:required
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:24:9-32
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:23:9-32
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:23:9-53
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:22:9-53
 uses-permission#android.permission.BLUETOOTH
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:26:5-68
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:26:22-65
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:25:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:27:5-74
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:26:5-74
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:27:22-71
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:26:22-71
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:28:5-79
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:27:5-79
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:28:22-76
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:27:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:29:5-81
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:28:5-81
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:29:22-78
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:28:22-78
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:30:5-67
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:29:5-67
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:30:22-64
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:29:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:31:5-81
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:30:5-81
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:31:22-78
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:30:22-78
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:32:5-75
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:31:5-75
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:32:22-72
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:31:22-72
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:33:5-80
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:32:5-80
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:33:22-77
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:32:22-77
 uses-permission#android.permission.WRITE_INTERNAL_STORAGE
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:34:5-81
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:33:5-81
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:34:22-78
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:33:22-78
 application
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:36:5-59:19
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:35:5-68:19
 MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\b2c1cf90b2a57494ff31c0ffb5fc2c85\AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\b2c1cf90b2a57494ff31c0ffb5fc2c85\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7025e1059d31e68a11f8f9acf5b6e28b\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7025e1059d31e68a11f8f9acf5b6e28b\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:38:9-33
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:37:9-33
 	android:icon
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:37:9-43
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:36:9-43
 	android:theme
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:39:9-40
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:38:9-40
 activity#com.example.android.bluetoothlegatt.DeviceControlActivity
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:40:9-46:20
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:39:9-41:20
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:40:19-56
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:41:13-45:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:42:17-69
-	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:42:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:44:17-77
-	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:44:27-74
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:40:13-50
 activity#com.example.android.bluetoothlegatt.Graphs
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:47:9-49:54
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:43:9-45:54
 	android:theme
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:49:13-51
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:45:13-51
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:48:13-35
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:44:13-35
 service#com.example.android.bluetoothlegatt.BluetoothLeService
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:51:9-53:38
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:46:13-48:42
 	android:enabled
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:53:13-35
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:48:17-39
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:52:13-47
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:47:17-51
 activity#com.example.android.bluetoothlegatt.CalibrationActivity
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:55:9-66
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:49:9-57
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:55:19-54
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:49:19-54
 meta-data#preloaded_fonts
-ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:56:9-58:57
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:51:9-53:57
 	android:resource
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:58:13-54
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:53:13-54
 	android:name
-		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:57:13-43
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:52:13-43
+activity#com.example.android.bluetoothlegatt.MainActivity
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:55:9-62:20
+	android:theme
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:57:13-57
+	android:name
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:56:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:58:13-61:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:59:17-69
+	android:name
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:59:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:60:17-77
+	android:name
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:60:27-74
+activity#com.example.android.bluetoothlegatt.DatabaseActivity
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:64:9-66:20
+	android:name
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:65:13-45
 uses-sdk
 INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
