@@ -1,6 +1,7 @@
 package com.example.android.bluetoothlegatt;
 
 import android.app.ActionBar;
+import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattService;
@@ -15,16 +16,22 @@ import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.SystemClock;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.ProgressBar;
 import android.widget.SimpleExpandableListAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.android.volley.Request;
@@ -51,11 +58,15 @@ public class DatabaseActivity extends AppCompatActivity {
     private ArrayList<ArrayList<BluetoothGattCharacteristic>> mGattCharacteristics = new ArrayList<>();
     private boolean mConnected = false;
     private BluetoothGattCharacteristic mNotifyCharacteristic;
+    private Spinner spinner;
+    private EditText edtId;
 
     private final String LIST_NAME = "NAME";
     private final String LIST_UUID = "UUID";
 
     private String stringData;
+    private Integer label;
+    private Integer idPersonal;
 
     private ArrayList<Float> ValoresX = new ArrayList<>();
     private ArrayList<Float> ValoresY = new ArrayList<>();
@@ -66,7 +77,7 @@ public class DatabaseActivity extends AppCompatActivity {
     private float numsensor2;
 
     ToggleButton toggle;
-    private int status;
+    private boolean status = false;
     private long startTime = 0L, timeInMilliseconds = 0L, timeSwapBuff = 0L, updateTime = 0L;
     private int startSecs = 0;
 
@@ -81,6 +92,9 @@ public class DatabaseActivity extends AppCompatActivity {
     private Float maxY = 0f;
     private Float minZ = 0f;
     private Float maxZ = 0f;
+
+    private static final String[] paths = {"Standing Still", "Walking", "Jogging", "Going Up Stairs",
+            "Going Down Stairs", "Jumping", "Laying Down", "Laying Up", "Squatting", "Push Ups"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +117,26 @@ public class DatabaseActivity extends AppCompatActivity {
         sensorView2 = findViewById(R.id.textZ);
         timeProgress = findViewById(R.id.determinateBar);
         txtTimer = findViewById(R.id.timerValue);
+        spinner = findViewById(R.id.spinner);
+        edtId = findViewById(R.id.edtID);
+
+        ArrayAdapter adapter = new ArrayAdapter(DatabaseActivity.this,
+                android.R.layout.simple_spinner_item,paths);
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                label = position+1;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
@@ -125,18 +159,27 @@ public class DatabaseActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    status = 1;
-                    startTime = 0L;
-                    timeInMilliseconds = 0L;
-                    timeSwapBuff = 0L;
-                    updateTime = 0L;
-                    timeProgress.setProgress(0);
-                    startTime = SystemClock.uptimeMillis();
-                    customHandler.postDelayed(updateTimerThread, 0);
+                    if(!edtId.getText().toString().isEmpty() && mConnected) {
+                        status = true;
+                        startTime = 0L;
+                        timeInMilliseconds = 0L;
+                        timeSwapBuff = 0L;
+                        updateTime = 0L;
+                        timeProgress.setProgress(0);
+                        startTime = SystemClock.uptimeMillis();
+                        customHandler.postDelayed(updateTimerThread, 0);
+                    }else{
+                        Toast.makeText(getApplicationContext(),"Please Enter a Valid Label or Identification",Toast.LENGTH_SHORT).show();
+                        buttonView.setChecked(false);
+                    }
                 } else {
+                    ValoresX.clear();
+                    ValoresY.clear();
+                    ValoresZ.clear();
                     timeSwapBuff += timeInMilliseconds;
                     customHandler.removeCallbacks(updateTimerThread);
-                    status = 0;
+                    status = false;
+                    Toast.makeText(getApplicationContext(),"Buffer Cleared and Timer Reset",Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -203,14 +246,14 @@ public class DatabaseActivity extends AppCompatActivity {
                         sensorView1.setText(str2);
                         sensorView2.setText(str3);
 
-                        if (status == 1) {
+                        if (status) {
                             ValoresX.add(numsensor0);
                             ValoresY.add(numsensor1);
                             ValoresZ.add(numsensor2);
 
                             if(ValoresX.size() == 20){
                                 if(status){
-                                    new SendHttp().execute(createQuery(ValuesX,ValuesY,ValuesZ));
+                                    new SendHttp().execute(createQuery(ValoresX,ValoresY,ValoresZ,label,Integer.parseInt(edtId.getText().toString())));
                                 }
                                 ValoresX.clear();
                                 ValoresY.clear();
@@ -430,7 +473,7 @@ public class DatabaseActivity extends AppCompatActivity {
         }
     }
 
-    private String createQuery(ArrayList<Float> valuesX, ArrayList<Float> valuesY, ArrayList<Float> valuesZ) {
+    private String createQuery(ArrayList<Float> valuesX, ArrayList<Float> valuesY, ArrayList<Float> valuesZ, Integer lb, Integer id) {
         StringBuilder query = new StringBuilder();
         StringBuilder arrayX = new StringBuilder();
         StringBuilder arrayY = new StringBuilder();
@@ -461,11 +504,10 @@ public class DatabaseActivity extends AppCompatActivity {
         query.append(arrayY.toString());
         query.append("&value_z=");
         query.append(arrayZ.toString());
-        query.append("&hr=");
-        query.append(curHR);
-        query.append("&idPersonal=%22");
-        query.append(email);
-        query.append("%22");
+        query.append("&label=");
+        query.append(lb);
+        query.append("&idPersonal=");
+        query.append(id);
 
         return query.toString();
     }

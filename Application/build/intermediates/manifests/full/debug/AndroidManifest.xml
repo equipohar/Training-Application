@@ -43,21 +43,9 @@
         android:label="Training"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.android.bluetoothlegatt.DeviceControlActivity" >
-        </activity>
-        <activity
-            android:name="com.example.android.bluetoothlegatt.Graphs"
-            android:theme="@style/Theme.AppCompat" />
-
         <service
             android:name="com.example.android.bluetoothlegatt.BluetoothLeService"
             android:enabled="true" />
-
-        <activity android:name="com.example.android.bluetoothlegatt.CalibrationActivity" />
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
 
         <activity
             android:name="com.example.android.bluetoothlegatt.MainActivity"
@@ -68,8 +56,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.bluetoothlegatt.DatabaseActivity" >
+        <activity android:name="com.example.android.bluetoothlegatt.DeviceControlActivity" >
         </activity>
+        <activity
+            android:name="com.example.android.bluetoothlegatt.DatabaseActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.example.android.bluetoothlegatt.Graphs"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity android:name="com.example.android.bluetoothlegatt.CalibrationActivity" >
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
