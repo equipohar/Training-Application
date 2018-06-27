@@ -1,190 +1,190 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:16:1-81:12
-INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:16:1-81:12
-INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:16:1-81:12
-INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:16:1-81:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d0924a1a8fca5e4693e2c1347f6e31e5\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\a20607a7bb997b586cbf30042645c2a6\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\ba767871ffd01507f3b2b226e60eae5d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\3ca5633b6bacf0af1728c743571b258b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\2f59462e363dff7a25bd0bd887a5de2d\AndroidManifest.xml:2:1-11:12
-MERGED from [com.edmodo:rangebar:1.0.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\rangebar-1.0.0.aar\61c94829a447c3d87d8e5a091ace912b\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\a18e124576d3b4d72447f20faa9b0fce\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\96bb45118e5a0d569ea7700ce6236646\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\b342abb7c3bddd7ca7bc183272090610\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\e78caa1a5126309fcff3bd3694f54e0b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\7b6f98f39c7ff804cb994b48815512b9\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\f10db4228f1161851d4a8863513320a7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\c0f700c81f3a6f93d5d4b012f2220ce0\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\d92053f7dcde4e4b575dfae11299709c\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\125c6a4a7ab8a5eeb8204f5c75bbe135\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\909ee156b1bb07b7f0f5b50396018f54\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e32bdf3247e5597383db15fd9d14a02d\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:16:1-81:12
-INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:16:1-81:12
-INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:16:1-81:12
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-81:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-81:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-81:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-81:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\3047185a3ba53d1e7ddc66eadac0a356\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\b2c1cf90b2a57494ff31c0ffb5fc2c85\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\79e928342a290e8322e17875e6be64d8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\334f8fe3090a8601a4bb096824b6d9fe\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7025e1059d31e68a11f8f9acf5b6e28b\AndroidManifest.xml:2:1-11:12
+MERGED from [com.edmodo:rangebar:1.0.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\rangebar-1.0.0.aar\8d229b98e69d4d9848e0d7cb521b312e\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8dafc06b33f67454ab7c45e48fcae0af\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\9835af95427ff91703010b968fc4bf49\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d20dd7cdd3bc888f74dcc5896493db0f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\a07a5f828226f7b49093c5b685cd56de\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\40c26921e656de4e366c723c960b70cc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\350e2447a1a1ae773064992f25d8cff9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b8ff3a0c071742819d54de46c6c2d9ac\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2b631f3a80aca48456753e010beca842\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6d6ea2c391c56531b0fb34aee77c0cd0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e78900d4fd321619df6dcded094ae54e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0e09fa2912544fe4bbe4f8a32bc956d1\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-81:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-81:12
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:1-81:12
 	package
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:17:5-50
-		INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:17:5-50
+		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:19:5-30
-		INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:19:5-30
+		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:16:11-69
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:16:11-69
 	android:versionCode
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:18:5-28
-		INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:18:5-28
+		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
 uses-feature#android.hardware.bluetooth_le
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:21:5-23:35
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:21:5-23:35
 	android:required
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:23:9-32
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:23:9-32
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:22:9-53
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:22:9-53
 uses-permission#android.permission.BLUETOOTH
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:25:5-68
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:25:22-65
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:25:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:26:5-74
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:26:5-74
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:26:22-71
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:26:22-71
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:27:5-79
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:27:5-79
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:27:22-76
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:27:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:28:5-81
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:28:5-81
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:28:22-78
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:28:22-78
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:29:5-67
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:29:5-67
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:29:22-64
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:29:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:30:5-81
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:30:5-81
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:30:22-78
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:30:22-78
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:31:5-75
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:31:5-75
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:31:22-72
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:31:22-72
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:32:5-80
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:32:5-80
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:32:22-77
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:32:22-77
 uses-permission#android.permission.WRITE_INTERNAL_STORAGE
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:33:5-81
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:33:5-81
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:33:22-78
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:33:22-78
 application
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:35:5-79:19
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\a20607a7bb997b586cbf30042645c2a6\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\a20607a7bb997b586cbf30042645c2a6\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\2f59462e363dff7a25bd0bd887a5de2d\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\2f59462e363dff7a25bd0bd887a5de2d\AndroidManifest.xml:9:5-20
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:35:5-79:19
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\b2c1cf90b2a57494ff31c0ffb5fc2c85\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\b2c1cf90b2a57494ff31c0ffb5fc2c85\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7025e1059d31e68a11f8f9acf5b6e28b\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7025e1059d31e68a11f8f9acf5b6e28b\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:37:9-33
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:37:9-33
 	android:icon
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:36:9-43
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:36:9-43
 	android:theme
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:38:9-40
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:38:9-40
 service#com.example.android.bluetoothlegatt.BluetoothLeService
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:40:9-42:38
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:40:9-42:38
 	android:enabled
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:42:13-35
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:42:13-35
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:41:13-47
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:41:13-47
 activity#com.example.android.bluetoothlegatt.MainActivity
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:44:9-51:20
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:44:9-51:20
 	android:theme
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:46:13-57
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:46:13-57
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:45:13-41
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:45:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:47:13-50:29
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:47:13-50:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:48:17-69
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:48:17-69
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:48:25-66
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:48:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:49:17-77
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:49:17-77
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:49:27-74
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:49:27-74
 activity#com.example.android.bluetoothlegatt.DeviceControlActivity
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:53:9-55:20
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:53:9-55:20
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:54:13-50
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:54:13-50
 activity#com.example.android.bluetoothlegatt.DatabaseActivity
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:57:9-60:20
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:57:9-60:20
 	android:theme
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:59:13-57
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:59:13-57
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:58:13-45
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:58:13-45
 activity#com.example.android.bluetoothlegatt.Graphs
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:62:9-65:20
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:62:9-65:20
 	android:theme
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:64:13-57
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:64:13-57
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:63:13-35
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:63:13-35
 activity#com.example.android.bluetoothlegatt.CalibrationActivity
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:67:9-69:20
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:67:9-69:20
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:68:13-48
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:68:13-48
 meta-data#preloaded_fonts
-ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:71:9-73:57
+ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:71:9-73:57
 	android:resource
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:73:13-54
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:73:13-54
 	android:name
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml:72:13-43
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml:72:13-43
 uses-sdk
-INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
-INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d0924a1a8fca5e4693e2c1347f6e31e5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d0924a1a8fca5e4693e2c1347f6e31e5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\a20607a7bb997b586cbf30042645c2a6\AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\a20607a7bb997b586cbf30042645c2a6\AndroidManifest.xml:7:5-43
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\ba767871ffd01507f3b2b226e60eae5d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\ba767871ffd01507f3b2b226e60eae5d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\3ca5633b6bacf0af1728c743571b258b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\3ca5633b6bacf0af1728c743571b258b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\2f59462e363dff7a25bd0bd887a5de2d\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\2f59462e363dff7a25bd0bd887a5de2d\AndroidManifest.xml:5:5-7:41
-MERGED from [com.edmodo:rangebar:1.0.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\rangebar-1.0.0.aar\61c94829a447c3d87d8e5a091ace912b\AndroidManifest.xml:7:5-9:41
-MERGED from [com.edmodo:rangebar:1.0.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\rangebar-1.0.0.aar\61c94829a447c3d87d8e5a091ace912b\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\a18e124576d3b4d72447f20faa9b0fce\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\a18e124576d3b4d72447f20faa9b0fce\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\96bb45118e5a0d569ea7700ce6236646\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\96bb45118e5a0d569ea7700ce6236646\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\b342abb7c3bddd7ca7bc183272090610\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\b342abb7c3bddd7ca7bc183272090610\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\e78caa1a5126309fcff3bd3694f54e0b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\e78caa1a5126309fcff3bd3694f54e0b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\7b6f98f39c7ff804cb994b48815512b9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\7b6f98f39c7ff804cb994b48815512b9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\f10db4228f1161851d4a8863513320a7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\f10db4228f1161851d4a8863513320a7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\c0f700c81f3a6f93d5d4b012f2220ce0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\c0f700c81f3a6f93d5d4b012f2220ce0\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\d92053f7dcde4e4b575dfae11299709c\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\d92053f7dcde4e4b575dfae11299709c\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\125c6a4a7ab8a5eeb8204f5c75bbe135\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\125c6a4a7ab8a5eeb8204f5c75bbe135\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\909ee156b1bb07b7f0f5b50396018f54\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\909ee156b1bb07b7f0f5b50396018f54\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e32bdf3247e5597383db15fd9d14a02d\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\vitto\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e32bdf3247e5597383db15fd9d14a02d\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
-INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\3047185a3ba53d1e7ddc66eadac0a356\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\3047185a3ba53d1e7ddc66eadac0a356\AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\b2c1cf90b2a57494ff31c0ffb5fc2c85\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\b2c1cf90b2a57494ff31c0ffb5fc2c85\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\79e928342a290e8322e17875e6be64d8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\79e928342a290e8322e17875e6be64d8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\334f8fe3090a8601a4bb096824b6d9fe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\334f8fe3090a8601a4bb096824b6d9fe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7025e1059d31e68a11f8f9acf5b6e28b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7025e1059d31e68a11f8f9acf5b6e28b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.edmodo:rangebar:1.0.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\rangebar-1.0.0.aar\8d229b98e69d4d9848e0d7cb521b312e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.edmodo:rangebar:1.0.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\rangebar-1.0.0.aar\8d229b98e69d4d9848e0d7cb521b312e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8dafc06b33f67454ab7c45e48fcae0af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8dafc06b33f67454ab7c45e48fcae0af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\9835af95427ff91703010b968fc4bf49\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\9835af95427ff91703010b968fc4bf49\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d20dd7cdd3bc888f74dcc5896493db0f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\d20dd7cdd3bc888f74dcc5896493db0f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\a07a5f828226f7b49093c5b685cd56de\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\a07a5f828226f7b49093c5b685cd56de\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\40c26921e656de4e366c723c960b70cc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\40c26921e656de4e366c723c960b70cc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\350e2447a1a1ae773064992f25d8cff9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\350e2447a1a1ae773064992f25d8cff9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b8ff3a0c071742819d54de46c6c2d9ac\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b8ff3a0c071742819d54de46c6c2d9ac\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2b631f3a80aca48456753e010beca842\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2b631f3a80aca48456753e010beca842\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6d6ea2c391c56531b0fb34aee77c0cd0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6d6ea2c391c56531b0fb34aee77c0cd0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e78900d4fd321619df6dcded094ae54e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e78900d4fd321619df6dcded094ae54e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0e09fa2912544fe4bbe4f8a32bc956d1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Vitto Russo\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0e09fa2912544fe4bbe4f8a32bc956d1\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
-		ADDED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\vitto\Desktop\Android Codes\Training-Application\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Vitto Russo\Desktop\Android Projects\Training-Application\Application\src\main\AndroidManifest.xml

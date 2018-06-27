@@ -18,10 +18,11 @@
     android:versionCode="1"
     android:versionName="1.0">
 
+    /*Esto habilita el archivo de BluetoothLeService como un servicio de la cual se puede vincular a una actividad*/
     <uses-feature
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
-
+    /*Permisos generales para usar internet y escribir sobre la memoria etc*/
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -32,6 +33,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
 
+    /*La estructura y los estilos de cada una de las actividades*/
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="Training"

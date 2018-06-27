@@ -41,7 +41,6 @@
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Training"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <service
             android:name="com.example.android.bluetoothlegatt.BluetoothLeService"
